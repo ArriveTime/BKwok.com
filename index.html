@@ -7,7 +7,7 @@
 
 <title>BangkokWeekly.com | Everything Bangkok</title>
 
-<meta name="description" content="BangkokWeekly.com — Bangkok news, Thai Lottery information, food, restaurants, temples, nightlife, Muay Thai, hotels, shopping, transportation, weather, visas, business and travel information.">
+<meta name="description" content="BangkokWeekly.com — Bangkok news, Thai Lottery information, food, restaurants, temples, nightlife, Muay Thai, hotels, shopping, transportation, weather, visas, business, travel information and daily horoscope.">
 
 <style>
 :root{
@@ -617,6 +617,63 @@ section{
   color:#d8e5eb;
 }
 
+/* HOROSCOPE */
+
+.horoscope-box{
+  background:white;
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:28px;
+  box-shadow:0 12px 35px rgba(0,0,0,.06);
+}
+
+.zodiac-grid{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:10px;
+}
+
+.zodiacBtn{
+  min-height:60px;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:#fff;
+  transition:.2s;
+}
+
+.zodiacBtn:hover{
+  background:#fff9ec;
+  border-color:#d9b35e;
+  transform:translateY(-2px);
+}
+
+.horoscope-result{
+  margin-top:22px;
+  padding:24px;
+  border-radius:18px;
+  background:linear-gradient(135deg,#fff9ec,#fff);
+  border:1px solid #ead8aa;
+  display:none;
+}
+
+.horoscope-result h3{
+  margin:5px 0 8px;
+  font-size:24px;
+}
+
+.horoscope-result p{
+  margin:0;
+  color:#687d8b;
+  font-size:15px;
+}
+
+.horoscope-disclaimer{
+  font-size:11px;
+  color:#89969e;
+  margin-top:12px;
+}
+
 footer{
   background:#030d15;
   color:#aebfc9;
@@ -745,10 +802,12 @@ footer a:hover{
   .quick{grid-template-columns:repeat(4,1fr)}
   .live-grid{grid-template-columns:1fr 1fr}
   .footer-grid{grid-template-columns:1fr 1fr}
+  .zodiac-grid{grid-template-columns:repeat(4,1fr)}
 }
 
 @media(max-width:750px){
   .lottery-inner{grid-template-columns:1fr}
+  .zodiac-grid{grid-template-columns:repeat(3,1fr)}
 }
 
 @media(max-width:700px){
@@ -761,6 +820,7 @@ footer a:hover{
   .section-head{display:block}
   .section-head p{margin-top:12px}
   .footer-grid{grid-template-columns:1fr}
+  .zodiac-grid{grid-template-columns:repeat(2,1fr)}
 }
 </style>
 </head>
@@ -802,6 +862,7 @@ footer a:hover{
 <a href="#stay">Stay</a>
 <a href="#directory">Directory</a>
 <a href="#travel">Travel Help</a>
+<a href="#horoscope">✨ Horoscope</a>
 <a href="#explore">Explore Live</a>
 </nav>
 
@@ -1471,6 +1532,63 @@ trademarks belong to their respective owners.
 </div>
 </section>
 
+<!-- DAILY HOROSCOPE -->
+
+<section id="horoscope" class="band">
+<div class="wrap">
+
+<div class="section-head">
+<div>
+<div class="eyebrow">Bangkok Lifestyle</div>
+<h2>✨ Daily Horoscope</h2>
+</div>
+
+<p>
+A little inspiration for your day. Choose your zodiac sign
+to see today's horoscope.
+</p>
+</div>
+
+<div class="horoscope-box searchable"
+data-keywords="horoscope astrology zodiac aries taurus gemini cancer leo virgo libra scorpio sagittarius capricorn aquarius pisces">
+
+<div class="zodiac-grid">
+
+<button class="link zodiacBtn" data-sign="Aries">♈ Aries</button>
+<button class="link zodiacBtn" data-sign="Taurus">♉ Taurus</button>
+<button class="link zodiacBtn" data-sign="Gemini">♊ Gemini</button>
+<button class="link zodiacBtn" data-sign="Cancer">♋ Cancer</button>
+<button class="link zodiacBtn" data-sign="Leo">♌ Leo</button>
+<button class="link zodiacBtn" data-sign="Virgo">♍ Virgo</button>
+<button class="link zodiacBtn" data-sign="Libra">♎ Libra</button>
+<button class="link zodiacBtn" data-sign="Scorpio">♏ Scorpio</button>
+<button class="link zodiacBtn" data-sign="Sagittarius">♐ Sagittarius</button>
+<button class="link zodiacBtn" data-sign="Capricorn">♑ Capricorn</button>
+<button class="link zodiacBtn" data-sign="Aquarius">♒ Aquarius</button>
+<button class="link zodiacBtn" data-sign="Pisces">♓ Pisces</button>
+
+</div>
+
+<div id="horoscopeResult" class="horoscope-result">
+
+<div class="eyebrow">
+Today's Horoscope
+</div>
+
+<h3 id="horoscopeSign"></h3>
+
+<p id="horoscopeMessage"></p>
+
+<div class="horoscope-disclaimer">
+Horoscopes are provided for entertainment purposes only.
+</div>
+
+</div>
+
+</div>
+</div>
+</section>
+
 <section id="explore" class="dark">
 <div class="wrap">
 
@@ -1547,9 +1665,9 @@ to original publishers.
 <small>Bangkok Weekly</small>
 </span>
 </div>
+
 <p>Everything Bangkok in one easy place.</p>
 
-<!-- AMAZON ASSOCIATE DISCLOSURE -->
 <p style="font-size:11px;color:#708591;margin-top:15px;">
 As an Amazon Associate I earn from qualifying purchases.
 </p>
@@ -1561,6 +1679,7 @@ As an Amazon Associate I earn from qualifying purchases.
 <a href="#lottery">🎟️ Thai Lottery</a>
 <a href="#food">Food & Restaurants</a>
 <a href="#see">Temples & Attractions</a>
+<a href="#horoscope">✨ Daily Horoscope</a>
 <a href="#explore">Bangkok News</a>
 <a href="#explore">Muay Thai</a>
 <a href="#directory">Local Directory</a>
@@ -1673,6 +1792,7 @@ currentLanguage =
 currentLanguage === "en" ? "th" : "en";
 
 applyLanguage();
+updateBangkokTime();
 
 });
 
@@ -1828,6 +1948,19 @@ behavior:"smooth",
 block:"center"
 });
 toast("Thai Lottery information found.");
+return;
+}
+
+if(
+query.includes("horoscope") ||
+query.includes("zodiac") ||
+query.includes("astrology")
+){
+document.querySelector("#horoscope").scrollIntoView({
+behavior:"smooth",
+block:"center"
+});
+toast("Daily Horoscope found.");
 return;
 }
 
@@ -2407,6 +2540,134 @@ Open GDELT ↗
 
 });
 
+/* DAILY HOROSCOPE */
+
+const horoscopeMessages = {
+
+Aries:[
+"Put your energy toward one clear priority today. A simple decision may create useful momentum.",
+"An unexpected conversation could give you a fresh perspective. Stay open to changing your approach.",
+"Today favors action, but patience will help you choose the right direction."
+],
+
+Taurus:[
+"Comfort and stability matter today. Give attention to something that makes your daily routine easier.",
+"A practical opportunity may deserve a second look. Small improvements can have lasting value.",
+"Take your time with an important decision today. There is no need to rush what matters."
+],
+
+Gemini:[
+"Conversation is highlighted today. A message, introduction or new idea may lead somewhere interesting.",
+"Curiosity could take you in an unexpected direction. Follow the subject that captures your attention.",
+"Your ability to communicate clearly can make a difference today."
+],
+
+Cancer:[
+"Pay attention to home, family and the people who make you feel grounded today.",
+"A quiet moment could help you see a situation more clearly.",
+"Trust your instincts, while giving yourself enough time to consider the facts."
+],
+
+Leo:[
+"Confidence is strong today. Use it to move forward on something you've been postponing.",
+"Your enthusiasm may be contagious. Share an idea with someone who can help it grow.",
+"Today is a good day to be visible, creative and generous with your energy."
+],
+
+Virgo:[
+"A little organization could make the rest of your day much easier.",
+"Focus on what you can improve rather than trying to make everything perfect.",
+"A practical solution may be simpler than you initially thought."
+],
+
+Libra:[
+"Balance is important today. Make room for both responsibilities and something you genuinely enjoy.",
+"A conversation may benefit from listening before deciding.",
+"Beauty, creativity and good company could bring welcome energy into your day."
+],
+
+Scorpio:[
+"Your focus is powerful today. Direct it toward something meaningful rather than something distracting.",
+"An unanswered question may become clearer if you look beneath the surface.",
+"Choose carefully where you invest your time and attention today."
+],
+
+Sagittarius:[
+"Something new may be calling your attention. Explore it without feeling that you must immediately commit.",
+"A change of scenery or new idea could refresh your outlook.",
+"Optimism can open doors today, especially when paired with practical action."
+],
+
+Capricorn:[
+"Steady progress matters more than speed today. Finish one important thing before starting another.",
+"A long-term goal deserves some attention. One small step can put you closer to it.",
+"Your practical instincts are useful today, particularly with money, work or planning."
+],
+
+Aquarius:[
+"An unconventional idea may be worth exploring today.",
+"Connecting with someone outside your usual circle could lead to an interesting perspective.",
+"Give yourself room to think differently. The obvious answer may not be the only answer."
+],
+
+Pisces:[
+"Creativity and intuition are highlighted today. Give yourself some quiet space to think.",
+"A kind gesture may have more impact than you realize.",
+"Listen to your instincts, but balance inspiration with practical details."
+]
+
+};
+
+function dailyHoroscope(sign){
+
+const today =
+new Intl.DateTimeFormat("en-CA",{
+timeZone:"Asia/Bangkok"
+}).format(new Date());
+
+let seed = 0;
+
+const seedText = sign + today;
+
+for(let i = 0; i < seedText.length; i++){
+seed += seedText.charCodeAt(i) * (i + 1);
+}
+
+const messages = horoscopeMessages[sign];
+
+return messages[seed % messages.length];
+
+}
+
+$$(".zodiacBtn").forEach(button=>{
+
+button.addEventListener("click",()=>{
+
+const sign = button.dataset.sign;
+
+$("#horoscopeSign").textContent =
+sign + " · " +
+new Intl.DateTimeFormat("en-US",{
+timeZone:"Asia/Bangkok",
+month:"long",
+day:"numeric",
+year:"numeric"
+}).format(new Date());
+
+$("#horoscopeMessage").textContent =
+dailyHoroscope(sign);
+
+$("#horoscopeResult").style.display = "block";
+
+$("#horoscopeResult").scrollIntoView({
+behavior:"smooth",
+block:"center"
+});
+
+});
+
+});
+
 /* PRIVACY */
 
 $("#privacyBtn").addEventListener("click",event=>{
@@ -2476,6 +2737,12 @@ Government Lottery Office.
 </p>
 
 <p>
+Daily horoscope content is provided solely for entertainment and
+general lifestyle purposes and should not be relied upon for medical,
+legal, financial, relationship or other important decisions.
+</p>
+
+<p>
 BangkokWeekly.com does not guarantee the accuracy, completeness,
 availability, prices, ratings, schedules, opening hours, legal
 information, immigration information, medical information or
@@ -2508,7 +2775,7 @@ Third-party names, trademarks and service marks remain the
 property of their respective owners.
 </p>
 
-`); 
+`);
 
 });
 
