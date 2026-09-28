@@ -1,216 +1,3184 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#07131f">
-<meta name="description" content="BKwok.com — Bangkok Wok. Bangkok's bilingual guide to food, temples, nightlife, shopping, transport, hotels, news, weather, visas, business and more.">
-<meta property="og:title" content="BKwok.com — Bangkok Wok">
-<meta property="og:description" content="Everything Bangkok. One smart place. English + Thai.">
-<title>BKwok.com — Bangkok Wok</title>
+
+<title>BangkokWeekly.com | Everything Bangkok</title>
+
+<meta name="description" content="BangkokWeekly.com — Bangkok news, food, restaurants, temples, nightlife, Muay Thai, hotels, shopping, transportation, visas, business and travel information.">
+
 <style>
-:root{--ink:#07131f;--navy:#0d2232;--gold:#e7b64a;--gold2:#f7df9b;--red:#d84e43;--cream:#fff9ec;--muted:#6e8190;--line:#dfe7eb;--max:1240px;--r:22px;--shadow:0 18px 55px rgba(0,0,0,.16)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:#f6f8fa;line-height:1.55}a{color:inherit}button,input{font:inherit}
-.top{background:#04101a;color:#c9d7df;font-size:.78rem}.topin{max-width:var(--max);margin:auto;padding:8px 20px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.top a{color:var(--gold2);text-decoration:none}.live{display:inline-flex;gap:7px;align-items:center}.dot{width:8px;height:8px;border-radius:50%;background:#48d48c;box-shadow:0 0 0 5px #48d48c20}
-header{position:sticky;top:0;z-index:50;background:#07131ff2;color:#fff;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff18}.nav{max-width:var(--max);margin:auto;padding:13px 20px;display:flex;align-items:center;gap:18px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:max-content}.logo{width:43px;height:43px;border-radius:14px;background:linear-gradient(145deg,#f2cc69,#a36b1b);display:grid;place-items:center;color:#07131f;font-weight:1000}.brand strong{font-size:1.04rem}.brand small{display:block;color:#93a8b6;font-size:.7rem;margin-top:-3px}nav{display:flex;gap:4px;flex:1;justify-content:center;overflow:auto}nav a{padding:9px 10px;color:#c8d5dd;text-decoration:none;white-space:nowrap;border-radius:10px;font-size:.84rem}nav a:hover{background:#ffffff10;color:#fff}.actions{display:flex;gap:7px}.btn{border:1px solid #ffffff20;background:#ffffff0d;color:#fff;border-radius:11px;padding:9px 12px;cursor:pointer}.btn.gold{background:var(--gold);color:#07131f;border-color:var(--gold);font-weight:900}.btn.dark{background:#07131f;color:#fff;border-color:#07131f}
-.hero{min-height:650px;color:#fff;position:relative;display:flex;align-items:end;background:linear-gradient(90deg,#03101de6,#03101d6b 55%,#03101d33),url("https://images.unsplash.com/photo-1755251042986-91270ffd76f5?auto=format&fit=crop&w=2200&q=86") center/cover}.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:180px;background:linear-gradient(transparent,#07131f)}.hero-in{position:relative;z-index:1;width:100%;max-width:var(--max);margin:auto;padding:100px 20px 72px}.kicker{color:var(--gold2);font-weight:900;letter-spacing:.14em;text-transform:uppercase;font-size:.76rem}.hero h1{font-size:clamp(3rem,7vw,6.6rem);line-height:.9;letter-spacing:-.065em;max-width:880px;margin:16px 0}.hero p{max-width:710px;color:#dbe5ea;font-size:1.08rem}.search{max-width:780px;margin-top:25px;background:#fff;padding:6px;border-radius:16px;display:flex;box-shadow:var(--shadow)}.search input{flex:1;border:0;outline:0;padding:15px;background:transparent;min-width:0}.search button{border:0;background:var(--gold);border-radius:12px;padding:0 19px;font-weight:900;cursor:pointer}.quick{display:grid;grid-template-columns:repeat(6,1fr);gap:9px;margin-top:20px}.quick a{background:#03101d99;border:1px solid #ffffff22;border-radius:14px;padding:12px;text-align:center;text-decoration:none;backdrop-filter:blur(8px)}.quick b{display:block;font-size:1.2rem}.quick span{font-size:.72rem;color:#c5d3db}
-section{padding:74px 20px}.wrap{max-width:var(--max);margin:auto}.head{display:flex;justify-content:space-between;gap:22px;align-items:end;margin-bottom:25px}.eyebrow{color:#9a6c1d;font-size:.72rem;font-weight:950;letter-spacing:.13em;text-transform:uppercase}.head h2{font-size:clamp(2rem,4vw,3.25rem);line-height:1;letter-spacing:-.045em;margin:6px 0 0}.head p{max-width:650px;color:#687b89;margin:0}
-.dark{background:#07131f;color:#fff}.dark .head p{color:#9eb1bd}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:0 7px 28px #07131f0c;transition:.2s}.card:hover{transform:translateY(-3px);box-shadow:0 17px 45px #07131f18}.dark .card{background:#0d2232;border-color:#1e3849;box-shadow:none}.pic{height:190px;background:center/cover}.body{padding:19px}.body h3{margin:0 0 7px;font-size:1.04rem}.body p{color:#667b89;font-size:.88rem;margin:0 0 12px}.dark .body p{color:#9fb1bd}.tag{display:inline-flex;background:#f6ead0;color:#8d651d;border-radius:999px;padding:4px 8px;font-size:.68rem;font-weight:900;margin:0 4px 6px 0}.dark .tag{background:#223b4b;color:#f5d58a}.links{display:flex;gap:6px;flex-wrap:wrap}.link{display:inline-flex;text-decoration:none;border:1px solid #dbe3e8;border-radius:9px;padding:7px 9px;font-size:.75rem;font-weight:850;background:transparent;cursor:pointer}.dark .link{border-color:#2b4557;color:#dce7ec}
-.livegrid{display:grid;grid-template-columns:1.2fr .8fr .9fr;gap:15px}.livebox{background:#0d2232;border:1px solid #1e3849;border-radius:22px;padding:22px}.temp{font-size:4rem;font-weight:950;line-height:.9}.weather{display:flex;align-items:end;gap:13px}.time{font-size:2.1rem;font-weight:900;letter-spacing:-.04em}.source{font-size:.72rem;color:#7f96a5;margin-top:10px}.notice{padding:17px 19px;border-radius:15px;background:#fff7de;border:1px solid #eed58a;color:#604b19;font-size:.86rem}.band{background:linear-gradient(135deg,#fff9eb,#fff)}.feature{display:grid;grid-template-columns:1fr 1fr;gap:16px}.feature .card{display:grid;grid-template-columns:42% 58%}.feature .pic{height:100%}.directory{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.dir{background:#fff;border:1px solid var(--line);border-radius:17px;padding:17px}.dir h3{margin:0 0 5px;font-size:1rem}.dir p{margin:0 0 10px;color:#6c7e8b;font-size:.83rem}.dir a{font-weight:850;color:#8b641e;text-decoration:none;font-size:.82rem}.maps{display:grid;grid-template-columns:1fr 1fr;gap:15px}.mapbox{border-radius:23px;padding:27px;color:#fff;background:linear-gradient(135deg,#0b2639,#164457);min-height:250px}.mapbox h3{font-size:1.8rem;margin:5px 0}.mapbox p{color:#b7c8d2;max-width:550px}.marquee{border-top:1px solid #20394a;border-bottom:1px solid #20394a;margin-top:18px;padding:10px 0;overflow:hidden;white-space:nowrap;color:#b7c8d1;font-size:.82rem}
-footer{background:#04101a;color:#aebfc9;padding:52px 20px 23px}.footgrid{max-width:var(--max);margin:auto;display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:30px}.footgrid h3{color:#fff;font-size:.9rem}.footgrid a{display:block;color:#aebfc9;text-decoration:none;margin:7px 0;font-size:.8rem}.footgrid a:hover{color:var(--gold2)}.copy{max-width:var(--max);margin:32px auto 0;border-top:1px solid #1b2c38;padding-top:18px;font-size:.72rem;color:#6f8491;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-.modal{display:none;position:fixed;inset:0;background:#000b;z-index:100;align-items:center;justify-content:center;padding:20px}.modal.show{display:flex}.dialog{position:relative;background:#fff;border-radius:24px;max-width:760px;width:100%;max-height:88vh;overflow:auto;padding:26px}.close{position:absolute;right:13px;top:12px;width:35px;height:35px;border:0;border-radius:50%;cursor:pointer}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:flex;flex-direction:column;gap:5px}.field.full{grid-column:1/-1}.field input,.field textarea{border:1px solid #d8e0e5;border-radius:10px;padding:10px}.toast{position:fixed;right:18px;bottom:18px;background:#07131f;color:#fff;padding:12px 15px;border-radius:12px;box-shadow:var(--shadow);opacity:0;transform:translateY(15px);transition:.2s;z-index:150}.toast.show{opacity:1;transform:none}.hidden{display:none!important}
-@media(max-width:1050px){nav{justify-content:flex-start}.grid{grid-template-columns:repeat(2,1fr)}.quick{grid-template-columns:repeat(3,1fr)}.livegrid{grid-template-columns:1fr 1fr}.footgrid{grid-template-columns:1fr 1fr}}
-@media(max-width:720px){.nav{flex-wrap:wrap}.brand{flex:1}nav{order:3;flex-basis:100%}.hero{min-height:700px}.quick{grid-template-columns:repeat(2,1fr)}.grid,.directory,.feature,.maps,.livegrid{grid-template-columns:1fr}.feature .card{display:block}.feature .pic{height:190px}.footgrid{grid-template-columns:1fr 1fr}.head{display:block}.head p{margin-top:10px}}
+:root{
+  --dark:#06131f;
+  --dark2:#0d2232;
+  --gold:#e7b64a;
+  --gold2:#f6d982;
+  --white:#ffffff;
+  --cream:#fff9ec;
+  --text:#07131f;
+  --muted:#687d8b;
+  --line:#dfe7eb;
+  --green:#44d18c;
+  --max:1240px;
+  --radius:22px;
+  --shadow:0 18px 55px rgba(0,0,0,.16);
+}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  font-family:Inter,Arial,Helvetica,sans-serif;
+  background:#f6f8fa;
+  color:var(--text);
+  line-height:1.55;
+}
+
+a{color:inherit}
+
+button,input{font:inherit}
+
+.topbar{
+  background:#020b12;
+  color:#c7d5de;
+  font-size:13px;
+}
+
+.topbar-inner{
+  max-width:var(--max);
+  margin:auto;
+  padding:8px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.live{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.live-dot{
+  width:8px;
+  height:8px;
+  background:var(--green);
+  border-radius:50%;
+  box-shadow:0 0 0 5px rgba(68,209,140,.12);
+}
+
+.topbar a{
+  color:var(--gold2);
+  text-decoration:none;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(6,19,31,.96);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.nav{
+  max-width:var(--max);
+  margin:auto;
+  padding:13px 20px;
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:11px;
+  color:white;
+  text-decoration:none;
+  white-space:nowrap;
+}
+
+.logo{
+  width:45px;
+  height:45px;
+  border-radius:14px;
+  display:grid;
+  place-items:center;
+  font-weight:1000;
+  color:#07131f;
+  background:linear-gradient(145deg,#f7dd8c,#b5791e);
+}
+
+.brand strong{
+  display:block;
+  font-size:17px;
+}
+
+.brand small{
+  display:block;
+  color:#92a8b5;
+  font-size:11px;
+  margin-top:-2px;
+}
+
+nav{
+  display:flex;
+  gap:3px;
+  justify-content:center;
+  flex:1;
+  overflow:auto;
+}
+
+nav a{
+  color:#c9d6de;
+  text-decoration:none;
+  font-size:14px;
+  padding:9px 10px;
+  border-radius:10px;
+  white-space:nowrap;
+}
+
+nav a:hover{
+  background:rgba(255,255,255,.08);
+  color:white;
+}
+
+.lang-btn{
+  background:rgba(255,255,255,.08);
+  color:white;
+  border:1px solid rgba(255,255,255,.16);
+  padding:9px 13px;
+  border-radius:11px;
+  cursor:pointer;
+}
+
+.hero{
+  min-height:650px;
+  display:flex;
+  align-items:flex-end;
+  color:white;
+  position:relative;
+  background:
+    linear-gradient(90deg,rgba(2,13,23,.92),rgba(2,13,23,.55),rgba(2,13,23,.25)),
+    url("https://images.unsplash.com/photo-1755251042986-91270ffd76f5?auto=format&fit=crop&w=2200&q=86")
+    center/cover;
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:160px;
+  background:linear-gradient(transparent,#07131f);
+}
+
+.hero-inner{
+  max-width:var(--max);
+  width:100%;
+  margin:auto;
+  padding:100px 20px 75px;
+  position:relative;
+  z-index:2;
+}
+
+.kicker{
+  color:var(--gold2);
+  font-size:13px;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+}
+
+.hero h1{
+  font-size:clamp(3rem,7vw,6.5rem);
+  line-height:.92;
+  letter-spacing:-.06em;
+  max-width:900px;
+  margin:15px 0;
+}
+
+.hero p{
+  max-width:760px;
+  color:#dbe5ea;
+  font-size:18px;
+}
+
+.search{
+  max-width:800px;
+  display:flex;
+  background:white;
+  border-radius:16px;
+  padding:6px;
+  margin-top:25px;
+  box-shadow:var(--shadow);
+}
+
+.search input{
+  border:0;
+  outline:0;
+  padding:15px;
+  flex:1;
+  min-width:0;
+  background:transparent;
+}
+
+.search button{
+  border:0;
+  border-radius:12px;
+  padding:0 22px;
+  background:var(--gold);
+  color:#07131f;
+  font-weight:900;
+  cursor:pointer;
+}
+
+.quick{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  gap:8px;
+  margin-top:20px;
+}
+
+.quick a{
+  background:rgba(2,13,23,.72);
+  border:1px solid rgba(255,255,255,.15);
+  color:white;
+  border-radius:14px;
+  padding:12px 7px;
+  text-align:center;
+  text-decoration:none;
+  backdrop-filter:blur(8px);
+}
+
+.quick b{
+  display:block;
+  font-size:20px;
+}
+
+.quick span{
+  color:#c9d5dd;
+  font-size:11px;
+}
+
+section{
+  padding:75px 20px;
+}
+
+.wrap{
+  max-width:var(--max);
+  margin:auto;
+}
+
+.section-head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:25px;
+  margin-bottom:27px;
+}
+
+.eyebrow{
+  color:#a17321;
+  font-size:12px;
+  font-weight:950;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+
+.section-head h2{
+  font-size:clamp(2rem,4vw,3.2rem);
+  line-height:1;
+  letter-spacing:-.04em;
+  margin:6px 0 0;
+}
+
+.section-head p{
+  max-width:650px;
+  color:var(--muted);
+  margin:0;
+}
+
+.dark{
+  background:#07131f;
+  color:white;
+}
+
+.dark .section-head p{
+  color:#9fb1bd;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+
+.card{
+  background:white;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  overflow:hidden;
+  transition:.2s;
+}
+
+.card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 15px 40px rgba(0,0,0,.1);
+}
+
+.dark .card{
+  background:#0d2232;
+  border-color:#1e394a;
+}
+
+.picture{
+  height:190px;
+  background:center/cover;
+}
+
+.card-body{
+  padding:19px;
+}
+
+.card h3{
+  margin:4px 0 8px;
+}
+
+.card p{
+  margin:0 0 13px;
+  color:#657a88;
+  font-size:14px;
+}
+
+.dark .card p{
+  color:#a6b7c1;
+}
+
+.tag{
+  display:inline-block;
+  border-radius:999px;
+  padding:4px 8px;
+  font-size:11px;
+  font-weight:900;
+  background:#f5ead0;
+  color:#8b631a;
+  margin-bottom:4px;
+}
+
+.dark .tag{
+  background:#223c4c;
+  color:#f4d68c;
+}
+
+.links{
+  display:flex;
+  gap:7px;
+  flex-wrap:wrap;
+}
+
+.link{
+  display:inline-flex;
+  border:1px solid #d9e2e7;
+  border-radius:9px;
+  padding:7px 10px;
+  text-decoration:none;
+  font-size:12px;
+  font-weight:850;
+  background:transparent;
+  color:inherit;
+  cursor:pointer;
+}
+
+.dark .link{
+  border-color:#315064;
+  color:#e0e9ee;
+}
+
+.live-grid{
+  display:grid;
+  grid-template-columns:1.2fr .8fr 1fr;
+  gap:15px;
+}
+
+.live-box{
+  background:#0d2232;
+  border:1px solid #1e394a;
+  border-radius:22px;
+  padding:23px;
+}
+
+.temp{
+  font-size:58px;
+  font-weight:950;
+  line-height:1;
+}
+
+.time{
+  font-size:34px;
+  font-weight:950;
+}
+
+.source{
+  color:#8299a7;
+  font-size:11px;
+  margin-top:10px;
+}
+
+.gold-btn{
+  display:inline-block;
+  background:var(--gold);
+  color:#07131f;
+  padding:10px 14px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:900;
+}
+
+.band{
+  background:linear-gradient(135deg,#fff9eb,#fff);
+}
+
+.directory{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+}
+
+.dir{
+  background:white;
+  border:1px solid var(--line);
+  border-radius:17px;
+  padding:18px;
+}
+
+.dir h3{
+  margin:0 0 6px;
+}
+
+.dir p{
+  color:#697d89;
+  font-size:13px;
+  margin:0 0 10px;
+}
+
+.dir a{
+  color:#8c641c;
+  text-decoration:none;
+  font-weight:850;
+  font-size:13px;
+}
+
+.notice{
+  margin-top:18px;
+  padding:17px 19px;
+  border-radius:15px;
+  background:#fff7de;
+  border:1px solid #eed58a;
+  color:#604b19;
+  font-size:13px;
+}
+
+.dark-notice{
+  background:#102b3d;
+  border-color:#315166;
+  color:#d8e5eb;
+}
+
+footer{
+  background:#030d15;
+  color:#aebfc9;
+  padding:55px 20px 25px;
+}
+
+.footer-grid{
+  max-width:var(--max);
+  margin:auto;
+  display:grid;
+  grid-template-columns:1.5fr repeat(3,1fr);
+  gap:30px;
+}
+
+footer h3{
+  color:white;
+  font-size:14px;
+}
+
+footer a{
+  display:block;
+  color:#aebfc9;
+  text-decoration:none;
+  font-size:13px;
+  margin:8px 0;
+}
+
+footer a:hover{
+  color:var(--gold2);
+}
+
+.copyright{
+  max-width:var(--max);
+  margin:35px auto 0;
+  padding-top:20px;
+  border-top:1px solid #1b2d39;
+  font-size:11px;
+  color:#708591;
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  z-index:500;
+  background:rgba(0,0,0,.72);
+  padding:20px;
+  align-items:center;
+  justify-content:center;
+}
+
+.modal.show{
+  display:flex;
+}
+
+.dialog{
+  background:white;
+  color:#07131f;
+  width:100%;
+  max-width:800px;
+  max-height:88vh;
+  overflow:auto;
+  border-radius:24px;
+  padding:27px;
+  position:relative;
+}
+
+.close{
+  position:absolute;
+  right:14px;
+  top:12px;
+  border:0;
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  cursor:pointer;
+  font-size:20px;
+}
+
+.result{
+  border:1px solid #dfe7eb;
+  border-radius:14px;
+  padding:13px;
+  margin:9px 0;
+}
+
+.result strong{
+  display:block;
+  padding-right:25px;
+}
+
+.result-meta{
+  font-size:12px;
+  color:#667b89;
+  margin:4px 0 8px;
+}
+
+.toast{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  z-index:1000;
+  background:#07131f;
+  color:white;
+  border-radius:12px;
+  padding:12px 16px;
+  opacity:0;
+  transform:translateY(15px);
+  transition:.2s;
+  box-shadow:var(--shadow);
+}
+
+.toast.show{
+  opacity:1;
+  transform:none;
+}
+
+.hidden{
+  display:none!important;
+}
+
+@media(max-width:1050px){
+  nav{justify-content:flex-start}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .directory{grid-template-columns:repeat(2,1fr)}
+  .quick{grid-template-columns:repeat(4,1fr)}
+  .live-grid{grid-template-columns:1fr 1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+
+@media(max-width:700px){
+  .nav{flex-wrap:wrap}
+  .brand{flex:1}
+  nav{order:3;flex-basis:100%}
+  .hero{min-height:720px}
+  .quick{grid-template-columns:repeat(2,1fr)}
+  .grid,.directory,.live-grid{grid-template-columns:1fr}
+  .section-head{display:block}
+  .section-head p{margin-top:12px}
+  .footer-grid{grid-template-columns:1fr}
+}
 </style>
 </head>
-<body>
-<div class="top"><div class="topin">
-  <span class="live"><i class="dot"></i> <span id="portalText">Bangkok live portal</span></span>
-  <span>ICT / GMT+7 · <a href="tel:1155">Tourist Police 1155</a> · <a href="tel:1669">Medical 1669</a> · <a href="tel:191">Emergency 191</a></span>
-</div></div>
 
-<header><div class="nav">
-  <a class="brand" href="#home"><span class="logo">BK</span><span><strong>BKwok.com</strong><small>Bangkok Wok</small></span></a>
-  <nav><a href="#live">Live</a><a href="#food">Food</a><a href="#see">See & Do</a><a href="#stay">Stay</a><a href="#transport">Transport</a><a href="#business">Business</a><a href="#help">Help</a></nav>
-  <div class="actions"><button class="btn" id="langBtn">ไทย</button><button class="btn" id="adminBtn">Admin</button></div>
-</div></header>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="live">
+      <span class="live-dot"></span>
+      <span id="portalText">Bangkok live portal</span>
+    </div>
+
+    <div>
+      Bangkok GMT+7 ·
+      <a href="tel:1155">Tourist Police 1155</a> ·
+      <a href="tel:1669">Medical 1669</a> ·
+      <a href="tel:191">Emergency 191</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="nav">
+
+    <a class="brand" href="#home">
+      <span class="logo">BW</span>
+      <span>
+        <strong>BangkokWeekly.com</strong>
+        <small>Bangkok Weekly</small>
+      </span>
+    </a>
+
+    <nav>
+      <a href="#live">Live</a>
+      <a href="#food">Food</a>
+      <a href="#see">See & Do</a>
+      <a href="#transport">Transport</a>
+      <a href="#stay">Stay</a>
+      <a href="#directory">Directory</a>
+      <a href="#travel">Travel Help</a>
+      <a href="#explore">Explore Live</a>
+    </nav>
+
+    <button class="lang-btn" id="langBtn">ไทย</button>
+
+  </div>
+</header>
 
 <main id="home">
-<section class="hero"><div class="hero-in">
-  <div class="kicker">Bangkok Wok · กรุงเทพฯ</div>
-  <h1 id="heroTitle">Everything Bangkok. One smart place.</h1>
-  <p id="heroSub">Food, temples, nightlife, hotels, shopping, transport, news, weather, visas, business, education and the practical information visitors and locals actually need.</p>
-  <form class="search" id="searchForm"><input id="siteSearch" placeholder="Search restaurants, temples, hotels, BTS, visas, shopping…" aria-label="Search BKwok"><button>Search</button></form>
-  <div class="quick">
-    <a href="#food"><b>🍜</b><span>Food</span></a><a href="#see"><b>🛕</b><span>Temples</span></a><a href="#transport"><b>🚆</b><span>BTS / MRT</span></a><a href="#stay"><b>🏨</b><span>Hotels</span></a><a href="#help"><b>🛂</b><span>Visa / Laws</span></a><a href="#business"><b>💼</b><span>Business</span></a>
-  </div>
-</div></section>
 
-<section id="live" class="dark"><div class="wrap">
-  <div class="head"><div><div class="eyebrow">Live Bangkok</div><h2>What is happening now</h2></div><p>Weather and time are live. Traffic, airport, visa and government information is linked to authoritative sources instead of pretending a static page is real-time.</p></div>
-  <div class="livegrid">
-    <div class="livebox"><div class="eyebrow">Bangkok weather</div><div class="weather"><div class="temp" id="temp">--°</div><div><strong id="weatherText">Loading…</strong><div id="weatherMeta">—</div></div></div><div class="source">Open-Meteo · <span id="weatherUpdated">—</span></div></div>
-    <div class="livebox"><div class="eyebrow">Bangkok time</div><div class="time" id="bkkTime">--:--:--</div><div id="bkkDate">—</div><div class="source">Asia/Bangkok · GMT+7</div></div>
-    <div class="livebox"><div class="eyebrow">Traffic</div><h3>BMA traffic information</h3><p style="color:#a9bdc8">Open Bangkok's official traffic and transportation information.</p><a class="btn gold" target="_blank" rel="noopener noreferrer" href="https://traffic.bangkok.go.th/">BMA Traffic ↗</a></div>
-  </div>
-  <div class="marquee">🛫 Flight status · 📰 News · 🚆 BTS / MRT · 🚦 Traffic · 🌦 Weather · 🥊 Muay Thai · 🎭 Events · 🍜 Food · 🛂 Visa updates</div>
-</div></section>
+<section class="hero">
+  <div class="hero-inner">
 
-<section id="food"><div class="wrap">
-  <div class="head"><div><div class="eyebrow">Eat Bangkok</div><h2>Food is the main event.</h2></div><p>Discover street food, markets and fine dining. Current prices, menus, opening hours and reservations should be verified with the venue.</p></div>
+    <div class="kicker">
+      Bangkok Weekly · กรุงเทพฯ
+    </div>
+
+    <h1 id="heroTitle">
+      Everything Bangkok. One smart place.
+    </h1>
+
+    <p id="heroSub">
+      News, food, restaurants, temples, nightlife, Muay Thai, hotels,
+      shopping, transportation, weather, visas, business, education
+      and the practical information visitors and locals need.
+    </p>
+
+    <form class="search" id="searchForm">
+      <input
+        id="siteSearch"
+        type="search"
+        placeholder="Search restaurants, temples, hotels, BTS, visas, shopping..."
+        aria-label="Search BangkokWeekly.com">
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="quick">
+      <a href="#food"><b>🍜</b><span>Food</span></a>
+      <a href="#see"><b>🛕</b><span>Temples</span></a>
+      <a href="#transport"><b>🚆</b><span>BTS / MRT</span></a>
+      <a href="#stay"><b>🏨</b><span>Hotels</span></a>
+      <a href="#travel"><b>🛂</b><span>Visa / Laws</span></a>
+      <a href="#explore"><b>🥊</b><span>Muay Thai</span></a>
+      <a href="#directory"><b>💼</b><span>Business</span></a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- LIVE -->
+
+<section id="live" class="dark">
+<div class="wrap">
+
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">Live Bangkok</div>
+      <h2>Bangkok right now</h2>
+    </div>
+
+    <p>
+      Current Bangkok time plus live weather when the public weather service
+      is available. Traffic, airports and transportation link to current sources.
+    </p>
+  </div>
+
+  <div class="live-grid">
+
+    <div class="live-box">
+      <div class="eyebrow">Bangkok Weather</div>
+      <div class="temp" id="temp">--°</div>
+      <strong id="weatherText">Loading weather...</strong>
+      <div id="weatherMeta"></div>
+      <div class="source" id="weatherUpdated">Open-Meteo</div>
+    </div>
+
+    <div class="live-box">
+      <div class="eyebrow">Bangkok Time</div>
+      <div class="time" id="bkkTime">--:--:--</div>
+      <div id="bkkDate">Loading...</div>
+      <div class="source">Asia/Bangkok · GMT+7</div>
+    </div>
+
+    <div class="live-box">
+      <div class="eyebrow">Bangkok Traffic</div>
+      <h3>Current traffic information</h3>
+      <p style="color:#a9bdc8">
+        Open Bangkok Metropolitan Administration traffic information.
+      </p>
+
+      <a class="gold-btn"
+         target="_blank"
+         rel="noopener noreferrer"
+         href="https://traffic.bangkok.go.th/">
+         BMA Traffic ↗
+      </a>
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+
+<!-- FOOD -->
+
+<section id="food">
+<div class="wrap">
+
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">Eat Bangkok</div>
+      <h2>Food is the main event.</h2>
+    </div>
+
+    <p>
+      From Yaowarat street food to fine dining, food markets and neighborhood
+      restaurants throughout Bangkok.
+    </p>
+  </div>
+
   <div class="grid">
-    <article class="card searchable" data-keywords="street food yaowarat chinatown noodles seafood market"><div class="pic" style="background-image:url('https://images.unsplash.com/photo-1628324716243-0c9c29971a58?auto=format&fit=crop&w=1200&q=82')"></div><div class="body"><span class="tag">Street Food</span><h3>Yaowarat / Chinatown</h3><p>Night markets, noodles, seafood, desserts and wok cooking.</p><div class="links"><a class="link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Yaowarat+Bangkok">Map</a><button class="link rateBtn" data-name="Yaowarat / Chinatown">Rate</button></div></div></article>
-    <article class="card searchable" data-keywords="fine dining luxury restaurants michelin tasting menu"><div class="pic" style="background-image:url('https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=82')"></div><div class="body"><span class="tag">Fine Dining</span><h3>Bangkok Fine Dining</h3><p>Explore current tasting menus and restaurant reviews before booking.</p><div class="links"><a class="link" target="_blank" rel="noopener" href="https://guide.michelin.com/en/th/bangkok-region/bangkok/restaurants">MICHELIN</a><a class="link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=fine+dining+Bangkok">Maps</a><button class="link rateBtn" data-name="Bangkok Fine Dining">Rate</button></div></div></article>
-    <article class="card searchable" data-keywords="thai food pad thai som tam curry tom yum"><div class="pic" style="background-image:url('https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&fit=crop&w=1200&q=82')"></div><div class="body"><span class="tag">Thai Classics</span><h3>Thai Food Explorer</h3><p>Build your own dish list: pad thai, som tam, tom yum, curry and more.</p><div class="links"><a class="link" target="_blank" rel="noopener" href="https://www.tourismthailand.org/">TAT Food ↗</a><button class="link rateBtn" data-name="Thai Food Explorer">Rate</button></div></div></article>
-    <article class="card searchable" data-keywords="markets floating market outdoor food chatuchak flowers"><div class="pic" style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=82')"></div><div class="body"><span class="tag">Markets</span><h3>Outdoor Food Markets</h3><p>Use current map results to find markets by neighborhood and time.</p><div class="links"><a class="link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Bangkok+outdoor+food+market">Find Markets ↗</a><button class="link rateBtn" data-name="Bangkok Markets">Rate</button></div></div></article>
-  </div>
-  <div class="notice" style="margin-top:18px"><strong>BKwok ratings:</strong> this starter stores ratings only in the visitor's browser. A public rating system should use a real database, moderation, anti-spam controls and a published review policy.</div>
-</div></section>
 
-<section id="see" class="band"><div class="wrap">
-  <div class="head"><div><div class="eyebrow">See & Do</div><h2>Temples, landmarks & experiences</h2></div><p>Photo-led discovery with direct map links and official tourism resources.</p></div>
-  <div class="feature">
-    <article class="card searchable" data-keywords="wat arun temple dawn river"><div class="pic" style="background-image:url('https://images.unsplash.com/photo-1755251042986-91270ffd76f5?auto=format&fit=crop&w=1400&q=82')"></div><div class="body"><span class="tag">Temple</span><h3>Wat Arun</h3><p>One of Bangkok's signature riverside landmarks. Check current visitor information before going.</p><div class="links"><a class="link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Wat+Arun+Bangkok">Directions ↗</a><a class="link" target="_blank" rel="noopener" href="https://www.tourismthailand.org/">TAT ↗</a></div></div></article>
-    <article class="card searchable" data-keywords="grand palace wat phra kaew emerald buddha"><div class="pic" style="background-image:url('https://images.unsplash.com/photo-1678915554115-a5e2de853191?auto=format&fit=crop&w=1400&q=82')"></div><div class="body"><span class="tag">Historic Bangkok</span><h3>Grand Palace & Wat Phra Kaew</h3><p>Verify current opening information, dress requirements and official visitor guidance.</p><div class="links"><a class="link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Grand+Palace+Bangkok">Directions ↗</a><a class="link" target="_blank" rel="noopener" href="https://www.tourismthailand.org/">TAT ↗</a></div></div></article>
-  </div>
-  <div class="grid" style="margin-top:16px">
-    <article class="card searchable" data-keywords="parks lumphini benjakitti running cycling"><div class="body"><span class="tag">Parks</span><h3>Lumphini & Benjakitti</h3><p>Green space, running, cycling and skyline views.</p><a class="link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Lumphini+Park+Bangkok">Explore parks ↗</a></div></article>
-    <article class="card searchable" data-keywords="shopping malls siam iconsiam chatuchak retail"><div class="body"><span class="tag">Shopping</span><h3>ICONSIAM, Siam & Chatuchak</h3><p>Major malls, markets, food halls and specialty shopping districts.</p><a class="link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=shopping+malls+Bangkok">Shopping map ↗</a></div></article>
-    <article class="card searchable" data-keywords="nightlife rooftop clubs bars entertainment"><div class="body"><span class="tag">Nightlife</span><h3>Rooftops & Entertainment</h3><p>Bars, clubs, live music, shows and late-night districts. Check venue rules.</p><a class="link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Bangkok+nightlife">Nightlife map ↗</a></div></article>
-    <article class="card searchable" data-keywords="muay thai boxing sports stadium fight"><div class="body"><span class="tag">Muay Thai</span><h3>Muay Thai & Sports</h3><p>Find stadiums, gyms and current event schedules through venue sources.</p><a class="link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Muay+Thai+Bangkok">Find Muay Thai ↗</a></div></article>
-  </div>
-</div></section>
+    <article class="card searchable"
+      data-keywords="yaowarat chinatown street food noodles seafood">
 
-<section id="transport" class="dark"><div class="wrap">
-  <div class="head"><div><div class="eyebrow">Move around</div><h2>BTS, MRT, airports & roads</h2></div><p>Fares and service information change. BKwok links to operators and government sources for verification.</p></div>
-  <div class="maps">
-    <div class="mapbox"><div class="eyebrow">BTS Skytrain</div><h3>Stations, routes & fares</h3><p>Official BTS information includes routes, ticketing, fare rates and One-Day Pass information.</p><a class="btn gold" target="_blank" rel="noopener" href="https://www.bts.co.th/eng/">BTS official ↗</a> <a class="btn" target="_blank" rel="noopener" href="https://www.bts.co.th/tickets/ticket-rabbit-farerate.html">Fare rates ↗</a></div>
-    <div class="mapbox"><div class="eyebrow">Public transport</div><h3>MRT, buses, boats & taxis</h3><p>Use official operator and government resources for current service, fares and accessibility information.</p><a class="btn gold" target="_blank" rel="noopener" href="https://entrythailand.go.th/en">Entry Thailand ↗</a> <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1">Plan route ↗</a></div>
-  </div>
-  <div class="grid" style="margin-top:16px">
-    <article class="card"><div class="body"><span class="tag">BKK</span><h3>Suvarnabhumi Airport</h3><p>Arrivals, departures, airport guide and transportation.</p><a class="link" target="_blank" rel="noopener" href="https://suvarnabhumi.airportthai.co.th/">Official airport ↗</a></div></article>
-    <article class="card"><div class="body"><span class="tag">DMK</span><h3>Don Mueang Airport</h3><p>Flight status, passenger information and services.</p><a class="link" target="_blank" rel="noopener" href="https://donmueang.airportthai.co.th/flight">Flight status ↗</a></div></article>
-    <article class="card"><div class="body"><span class="tag">Flights</span><h3>Compare flights</h3><p>Compare routes, then book with the airline or provider you select.</p><a class="link" target="_blank" rel="noopener" href="https://www.google.com/travel/flights">Google Flights ↗</a><a class="link" target="_blank" rel="noopener" href="https://www.skyscanner.com/">Skyscanner ↗</a></div></article>
-    <article class="card"><div class="body"><span class="tag">Traffic</span><h3>BMA Traffic</h3><p>Bangkok Metropolitan Administration traffic and transportation information.</p><a class="link" target="_blank" rel="noopener" href="https://traffic.bangkok.go.th/">Official traffic ↗</a></div></article>
-  </div>
-</div></section>
+      <div class="picture"
+        style="background-image:url('https://images.unsplash.com/photo-1628324716243-0c9c29971a58?auto=format&fit=crop&w=1200&q=82')">
+      </div>
 
-<section id="stay"><div class="wrap">
-  <div class="head"><div><div class="eyebrow">Stay & live</div><h2>Hotels, condos, homes & cars</h2></div><p>Discovery and booking entry points. Prices and availability are not stored by this static site.</p></div>
-  <div class="directory">
-    <div class="dir searchable" data-keywords="hotel resort hostel accommodation"><h3>🏨 Hotels & resorts</h3><p>Search by neighborhood, price and dates.</p><a target="_blank" rel="noopener" href="https://www.google.com/travel/hotels/Bangkok">Search hotels ↗</a></div>
-    <div class="dir searchable" data-keywords="condo apartment home rental"><h3>🏙️ Condos & homes</h3><p>Explore current rental listings by neighborhood.</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Bangkok+condo+rentals">Explore rentals ↗</a></div>
-    <div class="dir searchable" data-keywords="car rental driving car hire"><h3>🚗 Rental cars</h3><p>Compare availability, insurance and terms.</p><a target="_blank" rel="noopener" href="https://www.google.com/search?q=Bangkok+car+rental">Search rentals ↗</a></div>
-    <div class="dir searchable" data-keywords="travel agency tour guide excursions"><h3>🧭 Travel agencies</h3><p>Tours, guides, transfers and day trips.</p><a target="_blank" rel="noopener" href="https://www.tourismthailand.org/">TAT ↗</a></div>
-    <div class="dir searchable" data-keywords="real estate property buy sell"><h3>🏠 Real estate</h3><p>Property rules can differ for foreigners; verify with qualified professionals.</p><a target="_blank" rel="noopener" href="https://www.google.com/search?q=Bangkok+real+estate">Search property ↗</a></div>
-    <div class="dir searchable" data-keywords="booking hotel accommodation"><h3>🛎️ Booking</h3><p>Open the provider of your choice and verify cancellation terms.</p><a target="_blank" rel="noopener" href="https://www.booking.com/city/th/bangkok.html">Booking.com ↗</a></div>
-  </div>
-</div></section>
+      <div class="card-body">
+        <span class="tag">Street Food</span>
+        <h3>Yaowarat / Chinatown</h3>
+        <p>
+          Explore Bangkok's famous Chinatown restaurants, street food,
+          noodles, seafood and desserts.
+        </p>
 
-<section id="business" class="band"><div class="wrap">
-  <div class="head"><div><div class="eyebrow">Bangkok directory</div><h2>Business, banking & education</h2></div><p>A starter directory designed to grow into verified listings with contact information, websites, maps and editorial notes.</p></div>
-  <div class="directory">
-    <div class="dir searchable" data-keywords="bank banking atm money finance"><h3>🏦 Banking & ATMs</h3><p>Bank of Thailand maintains regulated financial-provider information.</p><a target="_blank" rel="noopener" href="https://www.bot.or.th/en/home.html">Bank of Thailand ↗</a></div>
-    <div class="dir searchable" data-keywords="school university international education"><h3>🎓 Schools & universities</h3><p>Search by curriculum, neighborhood and admissions.</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=international+schools+Bangkok">Find schools ↗</a></div>
-    <div class="dir searchable" data-keywords="thai language translation interpreter"><h3>🗣️ Translation</h3><p>Find Thai-English interpreters and translation services.</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=translation+service+Bangkok">Find translators ↗</a></div>
-    <div class="dir searchable" data-keywords="coworking office accountant legal business"><h3>💼 Business services</h3><p>Co-working, legal, accounting, recruitment and professional services.</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=business+services+Bangkok">Explore ↗</a></div>
-    <div class="dir searchable" data-keywords="shopping retail malls fashion electronics"><h3>🛍️ Retail & shopping</h3><p>Malls, markets, luxury retail and specialty stores.</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=shopping+malls+Bangkok">Shopping map ↗</a></div>
-    <div class="dir searchable" data-keywords="visitor center tourism information"><h3>ℹ️ Visitor information</h3><p>Tourism Authority of Thailand and government visitor resources.</p><a target="_blank" rel="noopener" href="https://www.tourismthailand.org/">TAT ↗</a></div>
-  </div>
-</div></section>
+        <div class="links">
+          <a class="link"
+             target="_blank"
+             rel="noopener noreferrer"
+             href="https://www.google.com/maps/search/?api=1&query=Yaowarat+Bangkok">
+             Map ↗
+          </a>
 
-<section id="help"><div class="wrap">
-  <div class="head"><div><div class="eyebrow">Travel smart</div><h2>Visa, laws, embassies & emergencies</h2></div><p>Immigration and legal information changes. Verify with the responsible authority before acting.</p></div>
-  <div class="directory">
-    <div class="dir searchable" data-keywords="visa e visa thailand foreigner"><h3>🛂 Thai e-Visa</h3><p>Official Ministry of Foreign Affairs e-Visa portal.</p><a target="_blank" rel="noopener" href="https://www.thaievisa.go.th/evisaservice/">Official e-Visa ↗</a></div>
-    <div class="dir searchable" data-keywords="immigration extension stay foreigner"><h3>🧾 Immigration & stay</h3><p>Current visa, extension and immigration requirements.</p><a target="_blank" rel="noopener" href="https://www.immigration.go.th/">Thai Immigration ↗</a></div>
-    <div class="dir searchable" data-keywords="thai laws rules foreigners legal"><h3>⚖️ Laws & rules</h3><p>Use Thai government sources for current laws and regulations.</p><a target="_blank" rel="noopener" href="https://www.thailand.go.th/">Thailand.go.th ↗</a></div>
-    <div class="dir searchable" data-keywords="us embassy american citizen services"><h3>🇺🇸 U.S. Embassy Bangkok</h3><p>Embassy information and American Citizen Services.</p><a target="_blank" rel="noopener" href="https://th.usembassy.gov/">U.S. Embassy ↗</a></div>
-    <div class="dir searchable" data-keywords="thai consular affairs passport consulate"><h3>🇹🇭 Thai Consular Affairs</h3><p>Official Ministry of Foreign Affairs consular information.</p><a target="_blank" rel="noopener" href="https://consular.mfa.go.th/th/index">Consular Affairs ↗</a></div>
-    <div class="dir searchable" data-keywords="emergency tourist police hospital police ambulance"><h3>🚨 Emergency contacts</h3><p>191 police · 1669 medical · 199 fire · 1155 Tourist Police · 1672 tourism.</p><a target="_blank" rel="noopener" href="https://www.thailand.go.th/public/issue-focus-detail/essential-tourist-assistance-contact-numbers-to-ensure-a-smooth-and-safe-journey">Official list ↗</a></div>
-  </div>
-  <div class="notice" style="margin-top:18px"><strong>Independent-site disclaimer:</strong> BKwok.com is not the Thai government, Tourism Authority of Thailand, U.S. Embassy, BTS, an airline, hotel, bank, hospital, immigration agency or law firm. External names and trademarks belong to their owners. No BKwok content should be treated as legal, immigration, medical or financial advice.</div>
-</div></section>
+          <button class="link rateBtn" data-name="Yaowarat Chinatown">
+            Rate
+          </button>
+        </div>
+      </div>
+    </article>
 
-<section class="dark"><div class="wrap">
-  <div class="head"><div><div class="eyebrow">Built to grow</div><h2>Next-generation Bangkok platform</h2></div><p>The starter is intentionally ready for a real database, licensed feeds and secure admin services.</p></div>
+
+    <article class="card searchable"
+      data-keywords="fine dining michelin luxury restaurant">
+
+      <div class="picture"
+        style="background-image:url('https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=82')">
+      </div>
+
+      <div class="card-body">
+        <span class="tag">Fine Dining</span>
+        <h3>Bangkok Fine Dining</h3>
+
+        <p>
+          Explore acclaimed restaurants, tasting menus and special-occasion dining.
+        </p>
+
+        <div class="links">
+          <a class="link"
+             target="_blank"
+             rel="noopener noreferrer"
+             href="https://guide.michelin.com/en/th/bangkok-region/bangkok/restaurants">
+             Michelin ↗
+          </a>
+
+          <a class="link"
+             target="_blank"
+             rel="noopener noreferrer"
+             href="https://www.google.com/maps/search/?api=1&query=fine+dining+Bangkok">
+             Maps ↗
+          </a>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="card searchable"
+      data-keywords="thai food pad thai curry tom yum som tam">
+
+      <div class="picture"
+        style="background-image:url('https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&fit=crop&w=1200&q=82')">
+      </div>
+
+      <div class="card-body">
+        <span class="tag">Thai Food</span>
+        <h3>Thai Food Explorer</h3>
+
+        <p>
+          Pad Thai, som tam, tom yum, curries, grilled dishes and regional Thai cuisine.
+        </p>
+
+        <div class="links">
+          <button class="link" id="restaurantTopBtn">
+            Find Restaurants
+          </button>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="card searchable"
+      data-keywords="markets food market outdoor chatuchak floating">
+
+      <div class="picture"
+        style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=82')">
+      </div>
+
+      <div class="card-body">
+        <span class="tag">Markets</span>
+        <h3>Bangkok Food Markets</h3>
+
+        <p>
+          Discover food markets, outdoor markets and Bangkok neighborhood markets.
+        </p>
+
+        <a class="link"
+           target="_blank"
+           rel="noopener noreferrer"
+           href="https://www.google.com/maps/search/?api=1&query=Bangkok+food+market">
+           Find Markets ↗
+        </a>
+      </div>
+    </article>
+
+  </div>
+
+</div>
+</section>
+
+
+<!-- SEE & DO -->
+
+<section id="see" class="band">
+<div class="wrap">
+
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">See Bangkok</div>
+      <h2>Temples, landmarks & experiences</h2>
+    </div>
+
+    <p>
+      Discover some of Bangkok's most famous attractions, parks,
+      shopping districts and entertainment areas.
+    </p>
+  </div>
+
   <div class="grid">
-    <article class="card"><div class="body"><span class="tag">Next</span><h3>🍽️ Restaurant database</h3><p>Verified listings, menus, hours, reservation links, cuisine filters and moderated public ratings.</p></div></article>
-    <article class="card"><div class="body"><span class="tag">Next</span><h3>📰 24-hour news</h3><p>Licensed publisher feeds or APIs, timestamps, source labels and duplicate-story handling.</p></div></article>
-    <article class="card"><div class="body"><span class="tag">Next</span><h3>🥊 Sports & events</h3><p>Muay Thai, football, concerts, festivals, venues and ticket links.</p></div></article>
-    <article class="card"><div class="body"><span class="tag">Next</span><h3>📍 Verified local directory</h3><p>Owner claims, phone, website, maps, hours, categories and sponsored listings.</p></div></article>
+
+    <article class="card searchable"
+      data-keywords="wat arun temple dawn river">
+
+      <div class="picture"
+        style="background-image:url('https://images.unsplash.com/photo-1755251042986-91270ffd76f5?auto=format&fit=crop&w=1200&q=82')">
+      </div>
+
+      <div class="card-body">
+        <span class="tag">Temple</span>
+        <h3>Wat Arun</h3>
+        <p>Bangkok's iconic Temple of Dawn on the Chao Phraya River.</p>
+
+        <a class="link"
+           target="_blank"
+           rel="noopener noreferrer"
+           href="https://www.google.com/maps/search/?api=1&query=Wat+Arun+Bangkok">
+           Directions ↗
+        </a>
+      </div>
+    </article>
+
+
+    <article class="card searchable"
+      data-keywords="grand palace wat phra kaew emerald buddha">
+
+      <div class="picture"
+        style="background-image:url('https://images.unsplash.com/photo-1678915554115-a5e2de853191?auto=format&fit=crop&w=1200&q=82')">
+      </div>
+
+      <div class="card-body">
+        <span class="tag">Historic Bangkok</span>
+        <h3>Grand Palace</h3>
+
+        <p>
+          Explore Bangkok's Grand Palace and Wat Phra Kaew area.
+        </p>
+
+        <a class="link"
+           target="_blank"
+           rel="noopener noreferrer"
+           href="https://www.google.com/maps/search/?api=1&query=Grand+Palace+Bangkok">
+           Directions ↗
+        </a>
+      </div>
+    </article>
+
+
+    <article class="card searchable"
+      data-keywords="shopping iconsiam siam chatuchak malls">
+
+      <div class="card-body">
+        <span class="tag">Shopping</span>
+        <h3>Bangkok Shopping</h3>
+
+        <p>
+          ICONSIAM, Siam, CentralWorld, Chatuchak, markets,
+          luxury stores and local shopping districts.
+        </p>
+
+        <a class="link"
+           target="_blank"
+           rel="noopener noreferrer"
+           href="https://www.google.com/maps/search/?api=1&query=shopping+Bangkok">
+           Shopping Map ↗
+        </a>
+      </div>
+    </article>
+
+
+    <article class="card searchable"
+      data-keywords="nightlife rooftop bars clubs entertainment">
+
+      <div class="card-body">
+        <span class="tag">Nightlife</span>
+        <h3>Bangkok After Dark</h3>
+
+        <p>
+          Rooftop bars, live music, entertainment districts,
+          clubs and nighttime experiences.
+        </p>
+
+        <a class="link"
+           target="_blank"
+           rel="noopener noreferrer"
+           href="https://www.google.com/maps/search/?api=1&query=Bangkok+nightlife">
+           Explore Nightlife ↗
+        </a>
+      </div>
+    </article>
+
   </div>
-</div></section>
+
+</div>
+</section>
+
+
+<!-- TRANSPORT -->
+
+<section id="transport" class="dark">
+<div class="wrap">
+
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">Move Around Bangkok</div>
+      <h2>BTS, MRT, airports & traffic</h2>
+    </div>
+
+    <p>
+      Transportation information with direct links to operators
+      and current travel resources.
+    </p>
+  </div>
+
+  <div class="grid">
+
+    <article class="card searchable" data-keywords="bts skytrain train transport">
+      <div class="card-body">
+        <span class="tag">BTS</span>
+        <h3>BTS Skytrain</h3>
+        <p>Routes, stations, ticketing and current fare information.</p>
+
+        <a class="link"
+           target="_blank"
+           rel="noopener noreferrer"
+           href="https://www.bts.co.th/eng/">
+           BTS Official ↗
+        </a>
+      </div>
+    </article>
+
+
+    <article class="card searchable" data-keywords="mrt subway train transport">
+      <div class="card-body">
+        <span class="tag">MRT</span>
+        <h3>Bangkok MRT</h3>
+        <p>Bangkok underground and urban rail information.</p>
+
+        <a class="link"
+           target="_blank"
+           rel="noopener noreferrer"
+           href="https://www.google.com/maps/search/?api=1&query=MRT+Bangkok">
+           MRT Map ↗
+        </a>
+      </div>
+    </article>
+
+
+    <article class="card searchable" data-keywords="airport bkk suvarnabhumi flights">
+      <div class="card-body">
+        <span class="tag">BKK</span>
+        <h3>Suvarnabhumi Airport</h3>
+
+        <p>Flights, airport information and passenger services.</p>
+
+        <a class="link"
+           target="_blank"
+           rel="noopener noreferrer"
+           href="https://suvarnabhumi.airportthai.co.th/">
+           Airport ↗
+        </a>
+      </div>
+    </article>
+
+
+    <article class="card searchable" data-keywords="airport dmk don mueang flights">
+      <div class="card-body">
+        <span class="tag">DMK</span>
+        <h3>Don Mueang Airport</h3>
+
+        <p>Flight information and airport services.</p>
+
+        <a class="link"
+           target="_blank"
+           rel="noopener noreferrer"
+           href="https://donmueang.airportthai.co.th/">
+           Airport ↗
+        </a>
+      </div>
+    </article>
+
+
+    <article class="card searchable" data-keywords="flights airfare airlines travel">
+      <div class="card-body">
+        <span class="tag">Flights</span>
+        <h3>Find Flights</h3>
+
+        <p>
+          Compare Bangkok flight routes and then book with your selected provider.
+        </p>
+
+        <div class="links">
+          <a class="link"
+             target="_blank"
+             rel="noopener noreferrer"
+             href="https://www.google.com/travel/flights">
+             Google Flights ↗
+          </a>
+
+          <a class="link"
+             target="_blank"
+             rel="noopener noreferrer"
+             href="https://www.skyscanner.com/">
+             Skyscanner ↗
+          </a>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="card searchable" data-keywords="traffic road driving">
+      <div class="card-body">
+        <span class="tag">Traffic</span>
+        <h3>Bangkok Traffic</h3>
+
+        <p>
+          Check Bangkok Metropolitan Administration traffic information.
+        </p>
+
+        <a class="link"
+           target="_blank"
+           rel="noopener noreferrer"
+           href="https://traffic.bangkok.go.th/">
+           Traffic ↗
+        </a>
+      </div>
+    </article>
+
+
+    <article class="card searchable" data-keywords="taxi grab ride transportation">
+      <div class="card-body">
+        <span class="tag">Taxi</span>
+        <h3>Taxis & Ride Services</h3>
+
+        <p>
+          Find taxi and transportation options throughout Bangkok.
+        </p>
+
+        <a class="link"
+           target="_blank"
+           rel="noopener noreferrer"
+           href="https://www.google.com/search?q=Bangkok+taxi+services">
+           Search ↗
+        </a>
+      </div>
+    </article>
+
+
+    <article class="card searchable" data-keywords="boat ferry river chao phraya">
+      <div class="card-body">
+        <span class="tag">River</span>
+        <h3>Boats & Ferries</h3>
+
+        <p>
+          Explore Chao Phraya River transportation and ferry locations.
+        </p>
+
+        <a class="link"
+           target="_blank"
+           rel="noopener noreferrer"
+           href="https://www.google.com/maps/search/?api=1&query=Bangkok+river+ferry">
+           River Map ↗
+        </a>
+      </div>
+    </article>
+
+  </div>
+
+</div>
+</section>
+
+
+<!-- STAY -->
+
+<section id="stay">
+<div class="wrap">
+
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">Stay in Bangkok</div>
+      <h2>Hotels, condos, homes & cars</h2>
+    </div>
+
+    <p>
+      Find accommodations, rentals and travel services throughout Bangkok.
+    </p>
+  </div>
+
+  <div class="directory">
+
+    <div class="dir searchable" data-keywords="hotel resort hostel">
+      <h3>🏨 Hotels & Resorts</h3>
+      <p>Search Bangkok hotels by neighborhood, dates and price.</p>
+
+      <a target="_blank"
+         rel="noopener noreferrer"
+         href="https://www.google.com/travel/hotels/Bangkok">
+         Search Hotels ↗
+      </a>
+    </div>
+
+
+    <div class="dir searchable" data-keywords="condo apartment home rental">
+      <h3>🏙️ Condos & Apartments</h3>
+      <p>Explore current Bangkok condo and apartment listings.</p>
+
+      <a target="_blank"
+         rel="noopener noreferrer"
+         href="https://www.google.com/search?q=Bangkok+condo+rentals">
+         Find Rentals ↗
+      </a>
+    </div>
+
+
+    <div class="dir searchable" data-keywords="real estate property homes">
+      <h3>🏠 Real Estate</h3>
+      <p>
+        Explore Bangkok property information. Foreign ownership rules
+        should be independently verified.
+      </p>
+
+      <a target="_blank"
+         rel="noopener noreferrer"
+         href="https://www.google.com/search?q=Bangkok+real+estate">
+         Real Estate ↗
+      </a>
+    </div>
+
+
+    <div class="dir searchable" data-keywords="car rental hire driving">
+      <h3>🚗 Rental Cars</h3>
+      <p>Search Bangkok car-rental providers and compare terms.</p>
+
+      <a target="_blank"
+         rel="noopener noreferrer"
+         href="https://www.google.com/search?q=Bangkok+car+rental">
+         Rental Cars ↗
+      </a>
+    </div>
+
+
+    <div class="dir searchable" data-keywords="travel agency tours guide">
+      <h3>🧭 Tours & Travel Agencies</h3>
+      <p>Find tours, guides, transfers and Bangkok experiences.</p>
+
+      <a target="_blank"
+         rel="noopener noreferrer"
+         href="https://www.tourismthailand.org/">
+         Thailand Tourism ↗
+      </a>
+    </div>
+
+
+    <div class="dir searchable" data-keywords="parks lumphini benjakitti">
+      <h3>🌳 Bangkok Parks</h3>
+      <p>Find parks, gardens, walking and recreation areas.</p>
+
+      <a target="_blank"
+         rel="noopener noreferrer"
+         href="https://www.google.com/maps/search/?api=1&query=parks+Bangkok">
+         Parks Map ↗
+      </a>
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+
+<!-- DIRECTORY -->
+
+<section id="directory" class="band">
+<div class="wrap">
+
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">Bangkok Directory</div>
+      <h2>Daily life in Bangkok</h2>
+    </div>
+
+    <p>
+      Banking, hospitals, education, translation, business services
+      and other practical Bangkok resources.
+    </p>
+  </div>
+
+  <div class="directory">
+
+    <div class="dir searchable" data-keywords="hospital doctor medical emergency">
+      <h3>🏥 Hospitals</h3>
+      <p>Find hospitals and medical facilities throughout Bangkok.</p>
+
+      <a target="_blank"
+         rel="noopener noreferrer"
+         href="https://www.google.com/maps/search/?api=1&query=hospitals+Bangkok">
+         Find Hospitals ↗
+      </a>
+    </div>
+
+
+    <div class="dir searchable" data-keywords="bank banking atm money">
+      <h3>🏦 Banking & ATMs</h3>
+      <p>Banking information and Bangkok financial services.</p>
+
+      <a target="_blank"
+         rel="noopener noreferrer"
+         href="https://www.bot.or.th/en/home.html">
+         Bank of Thailand ↗
+      </a>
+    </div>
+
+
+    <div class="dir searchable" data-keywords="school university education">
+      <h3>🎓 Schools & Universities</h3>
+      <p>Find international schools, universities and education services.</p>
+
+      <a target="_blank"
+         rel="noopener noreferrer"
+         href="https://www.google.com/maps/search/?api=1&query=international+schools+Bangkok">
+         Find Schools ↗
+      </a>
+    </div>
+
+
+    <div class="dir searchable" data-keywords="translation interpreter thai english">
+      <h3>🗣️ Translation Services</h3>
+      <p>Find Thai-English translators and interpreters.</p>
+
+      <a target="_blank"
+         rel="noopener noreferrer"
+         href="https://www.google.com/maps/search/?api=1&query=translation+services+Bangkok">
+         Translators ↗
+      </a>
+    </div>
+
+
+    <div class="dir searchable" data-keywords="business office accounting lawyer coworking">
+      <h3>💼 Business Services</h3>
+      <p>Find offices, co-working, accounting and professional services.</p>
+
+      <button class="link" id="businessDirectoryBtn">
+        Search Businesses
+      </button>
+    </div>
+
+
+    <div class="dir searchable" data-keywords="shopping retail mall market">
+      <h3>🛍️ Retail & Shopping</h3>
+      <p>Find shopping centers, markets and local stores.</p>
+
+      <a target="_blank"
+         rel="noopener noreferrer"
+         href="https://www.google.com/maps/search/?api=1&query=shopping+Bangkok">
+         Shopping ↗
+      </a>
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+
+<!-- TRAVEL HELP -->
+
+<section id="travel">
+<div class="wrap">
+
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">Travel Smart</div>
+      <h2>Visas, laws, embassies & emergencies</h2>
+    </div>
+
+    <p>
+      Important information changes. Always verify visa, immigration,
+      legal and government information with the responsible authority.
+    </p>
+  </div>
+
+  <div class="directory">
+
+    <div class="dir searchable" data-keywords="visa thai evisa immigration">
+      <h3>🛂 Thai e-Visa</h3>
+      <p>Official Thailand electronic visa information.</p>
+
+      <a target="_blank"
+         rel="noopener noreferrer"
+         href="https://www.thaievisa.go.th/">
+         Thai e-Visa ↗
+      </a>
+    </div>
+
+
+    <div class="dir searchable" data-keywords="immigration visa extension stay">
+      <h3>🧾 Thai Immigration</h3>
+      <p>Immigration and stay information.</p>
+
+      <a target="_blank"
+         rel="noopener noreferrer"
+         href="https://www.immigration.go.th/">
+         Immigration ↗
+      </a>
+    </div>
+
+
+    <div class="dir searchable" data-keywords="thai law rules foreigners">
+      <h3>⚖️ Thai Laws & Rules</h3>
+      <p>Government information about Thailand.</p>
+
+      <a target="_blank"
+         rel="noopener noreferrer"
+         href="https://www.thailand.go.th/">
+         Thailand.go.th ↗
+      </a>
+    </div>
+
+
+    <div class="dir searchable" data-keywords="american embassy united states usa">
+      <h3>🇺🇸 U.S. Embassy Bangkok</h3>
+      <p>U.S. Embassy and American Citizen Services information.</p>
+
+      <a target="_blank"
+         rel="noopener noreferrer"
+         href="https://th.usembassy.gov/">
+         U.S. Embassy ↗
+      </a>
+    </div>
+
+
+    <div class="dir searchable" data-keywords="consulate embassy foreign embassy">
+      <h3>🌎 Embassies & Consulates</h3>
+      <p>Find foreign embassies and consulates in Bangkok.</p>
+
+      <a target="_blank"
+         rel="noopener noreferrer"
+         href="https://www.google.com/maps/search/?api=1&query=embassies+Bangkok">
+         Embassy Map ↗
+      </a>
+    </div>
+
+
+    <div class="dir searchable" data-keywords="emergency police ambulance fire tourist police">
+      <h3>🚨 Emergency Numbers</h3>
+
+      <p>
+        Police 191 · Medical 1669 · Fire 199 · Tourist Police 1155.
+      </p>
+
+      <a href="tel:1155">Call Tourist Police</a>
+    </div>
+
+  </div>
+
+  <div class="notice">
+    <strong>Independent website disclaimer:</strong>
+    BangkokWeekly.com is an independent information and discovery website.
+    It is not the Thai government, Tourism Authority of Thailand, U.S. Embassy,
+    BTS, an airline, hotel, bank, hospital, immigration agency or law firm.
+    Important information should be verified with the responsible organization.
+    External names and trademarks belong to their respective owners.
+  </div>
+
+</div>
+</section>
+
+
+<!-- FUNCTIONAL OPEN DATA -->
+
+<section id="explore" class="dark">
+<div class="wrap">
+
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">Explore Bangkok Live</div>
+      <h2>Useful Bangkok information on demand</h2>
+    </div>
+
+    <p>
+      These features use public/open data to make BangkokWeekly.com
+      more useful without building a proprietary database first.
+    </p>
+  </div>
+
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-body">
+        <span class="tag">OPEN DATA</span>
+        <h3>🍽️ Restaurant Finder</h3>
+
+        <p>
+          Find Bangkok restaurants, cafés, fast food and food courts
+          represented in OpenStreetMap.
+        </p>
+
+        <button class="link" id="restaurantSearchBtn">
+          Find Restaurants
+        </button>
+      </div>
+    </article>
+
+
+    <article class="card">
+      <div class="card-body">
+        <span class="tag">CURRENT NEWS</span>
+        <h3>📰 Bangkok News</h3>
+
+        <p>
+          Search current Bangkok coverage through the public GDELT
+          news database and open the original publisher.
+        </p>
+
+        <button class="link" id="newsBtn">
+          Latest Bangkok News
+        </button>
+      </div>
+    </article>
+
+
+    <article class="card">
+      <div class="card-body">
+        <span class="tag">OPEN DATA</span>
+        <h3>🥊 Muay Thai & Sports</h3>
+
+        <p>
+          Find Muay Thai, boxing, martial arts and sports venues
+          represented in OpenStreetMap.
+        </p>
+
+        <button class="link" id="sportsBtn">
+          Find Muay Thai & Sports
+        </button>
+      </div>
+    </article>
+
+
+    <article class="card">
+      <div class="card-body">
+        <span class="tag">OPEN DIRECTORY</span>
+        <h3>📍 Local Business Directory</h3>
+
+        <p>
+          Discover Bangkok shops, offices and local businesses
+          with available map and contact information.
+        </p>
+
+        <button class="link" id="businessBtn">
+          Local Businesses
+        </button>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="notice dark-notice">
+    <strong>Open-data notice:</strong>
+    Restaurant, sports and business results use OpenStreetMap community data.
+    Information may be incomplete or outdated. © OpenStreetMap contributors,
+    available under the ODbL. News discovery uses GDELT and links visitors
+    to the original news publishers.
+  </div>
+
+</div>
+</section>
+
 </main>
 
-<footer><div class="footgrid">
-  <div><div class="brand"><span class="logo">BK</span><span><strong>BKwok.com</strong><small>Bangkok Wok</small></span></div><p>Bangkok discovery and practical travel information in English and Thai.</p></div>
-  <div><h3>Explore</h3><a href="#food">Food</a><a href="#see">Temples & attractions</a><a href="#transport">Transport</a><a href="#stay">Hotels & rentals</a></div>
-  <div><h3>Travel</h3><a target="_blank" rel="noopener" href="https://www.tourismthailand.org/">Thailand tourism ↗</a><a target="_blank" rel="noopener" href="https://www.thailand.go.th/">Thailand.go.th ↗</a><a target="_blank" rel="noopener" href="https://th.usembassy.gov/">U.S. Embassy ↗</a><a target="_blank" rel="noopener" href="https://www.bts.co.th/eng/">BTS ↗</a></div>
-  <div><h3>Site</h3><a href="#" id="privacyBtn">Privacy</a><a href="#" id="termsBtn">Terms & disclaimer</a><a href="#" id="dataBtn">My local data</a><a href="#" id="adminFooter">Admin analytics</a></div>
-</div><div class="copy"><span>© <span id="year"></span> BKwok.com / Bangkok Wok. Independent site.</span><span>Third-party trademarks belong to their respective owners.</span></div></footer>
 
-<div class="modal" id="modal" aria-hidden="true"><div class="dialog"><button class="close" id="closeModal">×</button><div id="modalContent"></div></div></div>
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-grid">
+
+  <div>
+    <div class="brand">
+      <span class="logo">BW</span>
+      <span>
+        <strong>BangkokWeekly.com</strong>
+        <small>Bangkok Weekly</small>
+      </span>
+    </div>
+
+    <p>
+      Everything Bangkok in one easy place.
+    </p>
+  </div>
+
+
+  <div>
+    <h3>Explore</h3>
+    <a href="#food">Food & Restaurants</a>
+    <a href="#see">Temples & Attractions</a>
+    <a href="#explore">Bangkok News</a>
+    <a href="#explore">Muay Thai</a>
+    <a href="#directory">Local Directory</a>
+  </div>
+
+
+  <div>
+    <h3>Travel</h3>
+
+    <a target="_blank"
+       rel="noopener noreferrer"
+       href="https://www.tourismthailand.org/">
+       Thailand Tourism ↗
+    </a>
+
+    <a target="_blank"
+       rel="noopener noreferrer"
+       href="https://www.thailand.go.th/">
+       Thailand.go.th ↗
+    </a>
+
+    <a target="_blank"
+       rel="noopener noreferrer"
+       href="https://th.usembassy.gov/">
+       U.S. Embassy ↗
+    </a>
+
+    <a target="_blank"
+       rel="noopener noreferrer"
+       href="https://www.bts.co.th/eng/">
+       BTS Skytrain ↗
+    </a>
+  </div>
+
+
+  <div>
+    <h3>Site</h3>
+
+    <a href="#" id="privacyBtn">
+      Privacy
+    </a>
+
+    <a href="#" id="termsBtn">
+      Terms & Disclaimer
+    </a>
+
+    <a href="#" id="dataBtn">
+      My Local Data
+    </a>
+
+    <!-- ADMIN IS INTENTIONALLY AT THE BOTTOM -->
+    <a href="#" id="adminFooter">
+      Private Admin
+    </a>
+  </div>
+
+</div>
+
+
+<div class="copyright">
+
+  <span>
+    © <span id="year"></span>
+    BangkokWeekly.com / Bangkok Weekly.
+    Independent website.
+  </span>
+
+  <span>
+    Third-party trademarks belong to their respective owners.
+    ·
+    <a target="_blank"
+       rel="noopener noreferrer"
+       href="https://www.openstreetmap.org/copyright">
+       © OpenStreetMap contributors / ODbL
+    </a>
+  </span>
+
+</div>
+
+</footer>
+
+
+<!-- MODAL -->
+
+<div class="modal" id="modal" aria-hidden="true">
+
+  <div class="dialog">
+
+    <button class="close" id="closeModal">
+      ×
+    </button>
+
+    <div id="modalContent"></div>
+
+  </div>
+
+</div>
+
+
 <div class="toast" id="toast"></div>
 
+
 <script>
-/*
-BKwok.com / Bangkok Wok
 
-STATIC-SITE SECURITY:
-Do NOT place an admin password in this HTML. GitHub Pages cannot securely
-protect a password or store a private visitor database.
+/* ======================================================
+   BANGKOKWEEKLY.COM
+   ====================================================== */
 
-For detailed visitor logs, configure ANALYTICS_API_URL to an HTTPS backend.
-The backend should authenticate server-side and return records only to an
-authorized administrator. Recommended fields:
-timestamp, city, region/state, country, ip, path.
+const $ = selector => document.querySelector(selector);
+const $$ = selector => [...document.querySelectorAll(selector)];
 
-Recommended protections: HTTPS, rate limiting, short-lived sessions, audit
-logs, access control, retention/deletion rules, and legal/privacy review.
 
-For a hidden aggregate visitor counter, a privacy-focused analytics service
-such as GoatCounter can be added separately. It should not be confused with
-the detailed IP/city visitor dashboard.
-*/
-const CONFIG={ANALYTICS_API_URL:"",GOATCOUNTER_CODE:""};
+/* ======================================================
+   LANGUAGE
+   ====================================================== */
 
-const translations={
-en:{portal:"Bangkok live portal",title:"Everything Bangkok. One smart place.",sub:"Food, temples, nightlife, hotels, shopping, transport, news, weather, visas, business, education and the practical information visitors and locals actually need.",search:"Search restaurants, temples, hotels, BTS, visas, shopping…"},
-th:{portal:"ศูนย์ข้อมูลกรุงเทพฯ แบบเรียลไทม์",title:"ทุกเรื่องกรุงเทพฯ รวมไว้ในที่เดียว",sub:"อาหาร วัด สถานที่ท่องเที่ยว ช้อปปิ้ง รถไฟฟ้า โรงแรม ข่าว อากาศ วีซ่า ธุรกิจ การศึกษา และข้อมูลสำคัญสำหรับผู้มาเยือนและคนท้องถิ่น",search:"ค้นหาร้านอาหาร วัด โรงแรม BTS วีซ่า ช้อปปิ้ง…"}
+const translations = {
+
+  en:{
+    portal:"Bangkok live portal",
+
+    title:"Everything Bangkok. One smart place.",
+
+    sub:"News, food, restaurants, temples, nightlife, Muay Thai, hotels, shopping, transportation, weather, visas, business, education and the practical information visitors and locals need.",
+
+    search:"Search restaurants, temples, hotels, BTS, visas, shopping..."
+  },
+
+  th:{
+    portal:"ศูนย์ข้อมูลกรุงเทพฯ",
+
+    title:"ทุกเรื่องกรุงเทพฯ รวมไว้ในที่เดียว",
+
+    sub:"ข่าว อาหาร ร้านอาหาร วัด สถานบันเทิง มวยไทย โรงแรม ช้อปปิ้ง การเดินทาง อากาศ วีซ่า ธุรกิจ การศึกษา และข้อมูลที่เป็นประโยชน์สำหรับกรุงเทพฯ",
+
+    search:"ค้นหาร้านอาหาร วัด โรงแรม BTS วีซ่า ช้อปปิ้ง..."
+  }
+
 };
-let lang=localStorage.getItem("bkwok_lang")||"en";
-const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
-function applyLanguage(){const t=translations[lang];$("#portalText").textContent=t.portal;$("#heroTitle").textContent=t.title;$("#heroSub").textContent=t.sub;$("#siteSearch").placeholder=t.search;$("#langBtn").textContent=lang==="en"?"ไทย":"English";document.documentElement.lang=lang;localStorage.setItem("bkwok_lang",lang);updateClock()}
-$("#langBtn").onclick=()=>{lang=lang==="en"?"th":"en";applyLanguage()};
 
-function updateClock(){const n=new Date();$("#bkkTime").textContent=new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Bangkok",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false}).format(n);$("#bkkDate").textContent=new Intl.DateTimeFormat(lang==="th"?"th-TH":"en-US",{timeZone:"Asia/Bangkok",weekday:"long",year:"numeric",month:"long",day:"numeric"}).format(n)}
-setInterval(updateClock,1000);updateClock();
 
-const wx={0:"Clear sky",1:"Mainly clear",2:"Partly cloudy",3:"Overcast",45:"Fog",48:"Fog",51:"Light drizzle",53:"Drizzle",55:"Heavy drizzle",61:"Light rain",63:"Rain",65:"Heavy rain",71:"Snow",73:"Snow",75:"Heavy snow",80:"Rain showers",81:"Rain showers",82:"Heavy showers",95:"Thunderstorm",96:"Thunderstorm + hail",99:"Thunderstorm + hail"};
-async function loadWeather(){try{const u="https://api.open-meteo.com/v1/forecast?latitude=13.7563&longitude=100.5018&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m&timezone=Asia%2FBangkok";const r=await fetch(u,{cache:"no-store"});if(!r.ok)throw 0;const d=await r.json(),c=d.current;$("#temp").textContent=Math.round(c.temperature_2m)+"°C";$("#weatherText").textContent=wx[c.weather_code]||"Current conditions";$("#weatherMeta").textContent=`Feels ${Math.round(c.apparent_temperature)}°C · Humidity ${c.relative_humidity_2m}% · Wind ${Math.round(c.wind_speed_10m)} km/h` ;$("#weatherUpdated").textContent=new Date(c.time).toLocaleString()}catch(e){$("#weatherText").textContent="Weather temporarily unavailable";$("#weatherMeta").textContent="Check official travel/weather sources."}}
+let currentLanguage =
+  localStorage.getItem("bangkokweekly_language") || "en";
+
+
+function applyLanguage(){
+
+  const t = translations[currentLanguage];
+
+  $("#portalText").textContent = t.portal;
+  $("#heroTitle").textContent = t.title;
+  $("#heroSub").textContent = t.sub;
+  $("#siteSearch").placeholder = t.search;
+
+  $("#langBtn").textContent =
+    currentLanguage === "en" ? "ไทย" : "English";
+
+  document.documentElement.lang = currentLanguage;
+
+  localStorage.setItem(
+    "bangkokweekly_language",
+    currentLanguage
+  );
+
+}
+
+
+$("#langBtn").addEventListener("click",()=>{
+
+  currentLanguage =
+    currentLanguage === "en" ? "th" : "en";
+
+  applyLanguage();
+
+});
+
+
+applyLanguage();
+
+
+/* ======================================================
+   BANGKOK CLOCK
+   ====================================================== */
+
+function updateBangkokTime(){
+
+  const now = new Date();
+
+  $("#bkkTime").textContent =
+    new Intl.DateTimeFormat("en-GB",{
+      timeZone:"Asia/Bangkok",
+      hour:"2-digit",
+      minute:"2-digit",
+      second:"2-digit",
+      hour12:false
+    }).format(now);
+
+
+  $("#bkkDate").textContent =
+    new Intl.DateTimeFormat(
+      currentLanguage === "th" ? "th-TH" : "en-US",
+      {
+        timeZone:"Asia/Bangkok",
+        weekday:"long",
+        year:"numeric",
+        month:"long",
+        day:"numeric"
+      }
+    ).format(now);
+
+}
+
+
+updateBangkokTime();
+
+setInterval(updateBangkokTime,1000);
+
+
+/* ======================================================
+   WEATHER
+   ====================================================== */
+
+const weatherCodes = {
+
+  0:"Clear sky",
+  1:"Mainly clear",
+  2:"Partly cloudy",
+  3:"Overcast",
+  45:"Fog",
+  48:"Fog",
+  51:"Light drizzle",
+  53:"Drizzle",
+  55:"Heavy drizzle",
+  61:"Light rain",
+  63:"Rain",
+  65:"Heavy rain",
+  80:"Rain showers",
+  81:"Rain showers",
+  82:"Heavy rain showers",
+  95:"Thunderstorm",
+  96:"Thunderstorm",
+  99:"Thunderstorm"
+
+};
+
+
+async function loadWeather(){
+
+  try{
+
+    const url =
+      "https://api.open-meteo.com/v1/forecast" +
+      "?latitude=13.7563" +
+      "&longitude=100.5018" +
+      "&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m" +
+      "&timezone=Asia%2FBangkok";
+
+
+    const response =
+      await fetch(url,{cache:"no-store"});
+
+
+    if(!response.ok){
+      throw new Error("Weather unavailable");
+    }
+
+
+    const data = await response.json();
+
+    const weather = data.current;
+
+
+    $("#temp").textContent =
+      Math.round(weather.temperature_2m) + "°C";
+
+
+    $("#weatherText").textContent =
+      weatherCodes[weather.weather_code] ||
+      "Current conditions";
+
+
+    $("#weatherMeta").textContent =
+      "Feels like " +
+      Math.round(weather.apparent_temperature) +
+      "°C · Humidity " +
+      weather.relative_humidity_2m +
+      "% · Wind " +
+      Math.round(weather.wind_speed_10m) +
+      " km/h";
+
+
+    $("#weatherUpdated").textContent =
+      "Weather updated " +
+      new Date().toLocaleTimeString();
+
+  }
+
+  catch(error){
+
+    $("#weatherText").textContent =
+      "Weather temporarily unavailable";
+
+    $("#weatherMeta").textContent =
+      "Please try again later.";
+
+  }
+
+}
+
+
 loadWeather();
 
-function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("show");clearTimeout(window.__t);window.__t=setTimeout(()=>t.classList.remove("show"),2600)}
-$("#searchForm").onsubmit=e=>{e.preventDefault();const q=$("#siteSearch").value.trim().toLowerCase();if(!q){toast("Enter a search term.");return}let n=0;$$(".searchable").forEach(x=>{const ok=(x.dataset.keywords+" "+x.textContent).toLowerCase().includes(q);x.classList.toggle("hidden",!ok);if(ok)n++});toast(n?`${n} result${n===1?"":"s"} found.`:"No local result found — try a map search.");if(n)document.querySelector(".searchable:not(.hidden)")?.scrollIntoView({behavior:"smooth",block:"center"})};
-$("#siteSearch").oninput=()=>{if(!$("#siteSearch").value.trim())$$(".searchable").forEach(x=>x.classList.remove("hidden"))};
 
-const modal=$("#modal"),mc=$("#modalContent");function openModal(x){mc.innerHTML=x;modal.classList.add("show");modal.setAttribute("aria-hidden","false")}function closeModal(){modal.classList.remove("show");modal.setAttribute("aria-hidden","true")}$("#closeModal").onclick=closeModal;modal.onclick=e=>{if(e.target===modal)closeModal()};document.onkeydown=e=>{if(e.key==="Escape")closeModal()};
+/* ======================================================
+   SEARCH
+   ====================================================== */
 
-function ratings(){return JSON.parse(localStorage.getItem("bkwok_ratings")||"{}")}function saveRating(n,v){const r=ratings();r[n]=v;localStorage.setItem("bkwok_ratings",JSON.stringify(r))}
-document.onclick=e=>{const b=e.target.closest(".rateBtn");if(!b)return;const name=b.dataset.name,cur=ratings()[name]||0;openModal(`<h2>Rate ${name}</h2><p>Your rating is stored only in this browser in this starter version.</p><div id="stars" style="font-size:1.6rem;margin:14px 0">${[1,2,3,4,5].map(i=>`<button class="star" data-v="${i}" style="border:0;background:none;cursor:pointer;color:${i<=cur?"#d99f28":"#c7d0d6"}">★</button>`).join("")}</div><button class="btn dark" id="saveRate">Save rating</button>`);let chosen=cur;$$(".star").forEach(s=>s.onclick=()=>{chosen=+s.dataset.v;$$(".star").forEach(x=>x.style.color=+x.dataset.v<=chosen?"#d99f28":"#c7d0d6")});$("#saveRate").onclick=()=>{saveRating(name,chosen);closeModal();toast("Rating saved on this device.")}};
+function toast(message){
 
-$("#privacyBtn").onclick=e=>{e.preventDefault();openModal(`<h2>Privacy</h2><p>This starter site does not require an account. It stores language preference and local ratings in browser localStorage. Weather is requested from Open-Meteo. External websites have their own privacy policies.</p><p>If you add analytics, accounts, listings, forms or advertising, publish a jurisdiction-appropriate privacy policy describing collection, purposes, retention, sharing and user rights.</p>`)};
-$("#termsBtn").onclick=e=>{e.preventDefault();openModal(`<h2>Terms & Disclaimer</h2><p>BKwok.com is an independent information and discovery website. It does not guarantee the accuracy, completeness, legality, availability, safety, prices, ratings, schedules, visa eligibility, medical information or third-party content shown or linked here.</p><p>Thai laws, immigration rules, property restrictions, fares, schedules, prices and opening hours can change. Verify important information with the responsible authority or a qualified professional.</p><p>BKwok must not imply government affiliation or endorsement. Third-party trademarks and service marks remain with their owners.</p>`)};
-$("#dataBtn").onclick=e=>{e.preventDefault();openModal(`<h2>My local data</h2><p>This browser currently stores only BKwok preferences/ratings.</p><pre style="background:#f3f6f7;padding:12px;border-radius:10px;overflow:auto">${JSON.stringify({language:localStorage.getItem("bkwok_lang"),ratings:ratings()},null,2)}</pre><button class="btn dark" id="clearData">Clear BKwok local data</button>`);$("#clearData").onclick=()=>{localStorage.removeItem("bkwok_lang");localStorage.removeItem("bkwok_ratings");closeModal();toast("Local BKwok data cleared.")}};
+  const element = $("#toast");
 
-async function admin(){if(!CONFIG.ANALYTICS_API_URL){openModal(`<h2>Admin analytics</h2><div class="notice"><strong>Secure backend required.</strong> A static GitHub page cannot safely hide an admin password or securely store raw IP logs.</div><p>Set <code>ANALYTICS_API_URL</code> after deploying an HTTPS backend. The backend should authenticate server-side and return only authorized records.</p><p>Suggested record fields: date/time, city, region/state, country, IP and page. Use a defined retention period and legal/privacy review before collecting raw IP addresses.</p>`);return}const password=prompt("Admin password:");if(!password)return;try{const r=await fetch(CONFIG.ANALYTICS_API_URL,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({password})});if(!r.ok)throw 0;const d=await r.json(),rows=(d.visitors||[]).sort((a,b)=>new Date(b.timestamp)-new Date(a.timestamp));openModal(`<h2>Live visitor activity</h2><p>${rows.length} records returned.</p><div style="overflow:auto"><table style="width:100%;border-collapse:collapse;font-size:.8rem"><tr><th align="left">Date/time</th><th align="left">City</th><th align="left">Region</th><th align="left">Country</th><th align="left">IP</th></tr>${rows.map(v=>`<tr><td style="padding:7px;border-bottom:1px solid #eee">${esc(v.timestamp)}</td><td style="padding:7px;border-bottom:1px solid #eee">${esc(v.city)}</td><td style="padding:7px;border-bottom:1px solid #eee">${esc(v.region)}</td><td style="padding:7px;border-bottom:1px solid #eee">${esc(v.country)}</td><td style="padding:7px;border-bottom:1px solid #eee">${esc(v.ip)}</td></tr>`).join("")}</table></div>`)}catch(e){openModal(`<h2>Admin analytics</h2><div class="notice"><strong>Authentication failed or analytics service is unavailable.</strong></div>`)}}
-function esc(s){return String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]))}
-$("#adminBtn").onclick=admin;$("#adminFooter").onclick=e=>{e.preventDefault();admin()};
+  element.textContent = message;
 
-function installGoatCounter(){if(!CONFIG.GOATCOUNTER_CODE)return;const s=document.createElement("script");s.dataset.goatcounter=`https://${CONFIG.GOATCOUNTER_CODE}.goatcounter.com/count`;s.async=true;s.src="https://gc.zgo.at/count.v5.js";s.crossOrigin="anonymous";s.integrity="sha384-atnOLvQb9t+jTSipvd75X2yginT4PjVbqDdlJAmxMm+wYElFmeR6EmLP5bYeoRVQ";document.head.appendChild(s)}
-installGoatCounter();
-$("#year").textContent=new Date().getFullYear();applyLanguage();
+  element.classList.add("show");
+
+  clearTimeout(window.bwToast);
+
+  window.bwToast =
+    setTimeout(()=>{
+      element.classList.remove("show");
+    },2500);
+
+}
+
+
+$("#searchForm").addEventListener("submit",event=>{
+
+  event.preventDefault();
+
+  const query =
+    $("#siteSearch")
+    .value
+    .trim()
+    .toLowerCase();
+
+
+  if(!query){
+
+    toast("Enter something to search.");
+
+    return;
+
+  }
+
+
+  let results = 0;
+
+
+  $$(".searchable").forEach(item=>{
+
+    const text =
+      (
+        (item.dataset.keywords || "") +
+        " " +
+        item.textContent
+      ).toLowerCase();
+
+
+    const match =
+      text.includes(query);
+
+
+    item.classList.toggle(
+      "hidden",
+      !match
+    );
+
+
+    if(match){
+      results++;
+    }
+
+  });
+
+
+  if(results){
+
+    toast(
+      results +
+      " result" +
+      (results === 1 ? "" : "s") +
+      " found."
+    );
+
+
+    const first =
+      document.querySelector(
+        ".searchable:not(.hidden)"
+      );
+
+
+    if(first){
+
+      first.scrollIntoView({
+        behavior:"smooth",
+        block:"center"
+      });
+
+    }
+
+  }
+
+  else{
+
+    toast(
+      "No local result found. Try another search."
+    );
+
+  }
+
+});
+
+
+$("#siteSearch").addEventListener("input",()=>{
+
+  if(!$("#siteSearch").value.trim()){
+
+    $$(".searchable").forEach(item=>{
+      item.classList.remove("hidden");
+    });
+
+  }
+
+});
+
+
+/* ======================================================
+   MODAL
+   ====================================================== */
+
+const modal = $("#modal");
+
+const modalContent = $("#modalContent");
+
+
+function openModal(content){
+
+  modalContent.innerHTML = content;
+
+  modal.classList.add("show");
+
+  modal.setAttribute(
+    "aria-hidden",
+    "false"
+  );
+
+}
+
+
+function closeModal(){
+
+  modal.classList.remove("show");
+
+  modal.setAttribute(
+    "aria-hidden",
+    "true"
+  );
+
+}
+
+
+$("#closeModal").addEventListener(
+  "click",
+  closeModal
+);
+
+
+modal.addEventListener("click",event=>{
+
+  if(event.target === modal){
+    closeModal();
+  }
+
+});
+
+
+document.addEventListener("keydown",event=>{
+
+  if(event.key === "Escape"){
+    closeModal();
+  }
+
+});
+
+
+/* ======================================================
+   SAFE HTML
+   ====================================================== */
+
+function escapeHTML(value){
+
+  return String(value ?? "")
+  .replace(
+    /[&<>"']/g,
+    character=>({
+      "&":"&amp;",
+      "<":"&lt;",
+      ">":"&gt;",
+      '"':"&quot;",
+      "'":"&#039;"
+    }[character])
+  );
+
+}
+
+
+/* ======================================================
+   RATINGS
+   Local-device ratings only
+   ====================================================== */
+
+function getRatings(){
+
+  try{
+
+    return JSON.parse(
+      localStorage.getItem(
+        "bangkokweekly_ratings"
+      ) || "{}"
+    );
+
+  }
+
+  catch(error){
+
+    return {};
+
+  }
+
+}
+
+
+function saveRating(name,value){
+
+  const ratings = getRatings();
+
+  ratings[name] = value;
+
+  localStorage.setItem(
+    "bangkokweekly_ratings",
+    JSON.stringify(ratings)
+  );
+
+}
+
+
+document.addEventListener("click",event=>{
+
+  const button =
+    event.target.closest(".rateBtn");
+
+
+  if(!button){
+    return;
+  }
+
+
+  const name =
+    button.dataset.name;
+
+
+  const current =
+    getRatings()[name] || 0;
+
+
+  openModal(`
+
+    <h2>Rate ${escapeHTML(name)}</h2>
+
+    <p>
+      This rating is stored only on your device.
+    </p>
+
+    <div id="ratingStars"
+         style="font-size:28px;margin:20px 0">
+
+      ${[1,2,3,4,5].map(number=>
+
+        `<button
+          class="ratingStar"
+          data-rating="${number}"
+          style="
+            border:0;
+            background:none;
+            cursor:pointer;
+            font-size:28px;
+            color:${number <= current ? "#d99f28" : "#c7d0d6"};
+          ">
+          ★
+        </button>`
+
+      ).join("")}
+
+    </div>
+
+    <button
+      class="gold-btn"
+      id="saveRatingBtn"
+      style="border:0;cursor:pointer">
+
+      Save Rating
+
+    </button>
+
+  `);
+
+
+  let selected = current;
+
+
+  $$(".ratingStar").forEach(star=>{
+
+    star.addEventListener("click",()=>{
+
+      selected =
+        Number(star.dataset.rating);
+
+
+      $$(".ratingStar").forEach(item=>{
+
+        item.style.color =
+          Number(item.dataset.rating) <= selected
+          ? "#d99f28"
+          : "#c7d0d6";
+
+      });
+
+    });
+
+  });
+
+
+  $("#saveRatingBtn")
+  .addEventListener("click",()=>{
+
+    saveRating(name,selected);
+
+    closeModal();
+
+    toast("Rating saved on this device.");
+
+  });
+
+});
+
+
+/* ======================================================
+   OPENSTREETMAP / OVERPASS
+   ====================================================== */
+
+const OVERPASS_ENDPOINT =
+  "https://overpass-api.de/api/interpreter";
+
+
+const BANGKOK_BBOX =
+  "13.55,100.30,13.95,100.80";
+
+
+function showOpenDataResults(
+  title,
+  description,
+  results
+){
+
+  openModal(`
+
+    <h2>${escapeHTML(title)}</h2>
+
+    <p>${escapeHTML(description)}</p>
+
+    <div>
+      ${
+        results.length
+        ? results.join("")
+        : `<div class="notice">
+             No results were returned.
+             Please try again shortly.
+           </div>`
+      }
+    </div>
+
+    <p style="
+      font-size:11px;
+      color:#738692;
+      margin-top:18px;
+    ">
+      © OpenStreetMap contributors · ODbL.
+      Community-maintained information may be
+      incomplete or outdated.
+    </p>
+
+  `);
+
+}
+
+
+function makeOSMCard(item){
+
+  const tags =
+    item.tags || {};
+
+
+  const name =
+    tags["name:en"] ||
+    tags.name ||
+    tags["name:th"] ||
+    "Unnamed listing";
+
+
+  const address = [
+
+    tags["addr:housenumber"],
+    tags["addr:street"],
+    tags["addr:suburb"],
+    tags["addr:district"]
+
+  ]
+  .filter(Boolean)
+  .join(" ");
+
+
+  const phone =
+    tags["contact:phone"] ||
+    tags.phone ||
+    "";
+
+
+  let website =
+    tags["contact:website"] ||
+    tags.website ||
+    "";
+
+
+  if(
+    website &&
+    !/^https?:\/\//i.test(website)
+  ){
+
+    website =
+      "https://" + website;
+
+  }
+
+
+  const lat =
+    item.lat ??
+    item.center?.lat;
+
+
+  const lon =
+    item.lon ??
+    item.center?.lon;
+
+
+  const mapURL =
+    lat && lon
+    ?
+    `https://www.openstreetmap.org/?mlat=${encodeURIComponent(lat)}&mlon=${encodeURIComponent(lon)}#map=18/${encodeURIComponent(lat)}/${encodeURIComponent(lon)}`
+    :
+    "https://www.openstreetmap.org/";
+
+
+  return `
+
+    <div class="result">
+
+      <strong>
+        ${escapeHTML(name)}
+      </strong>
+
+      ${
+        address
+        ?
+        `<div class="result-meta">
+          ${escapeHTML(address)}
+        </div>`
+        :
+        ""
+      }
+
+      ${
+        phone
+        ?
+        `<div class="result-meta">
+          ${escapeHTML(phone)}
+        </div>`
+        :
+        ""
+      }
+
+      <div class="links">
+
+        <a
+          class="link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="${escapeHTML(mapURL)}">
+
+          Map ↗
+
+        </a>
+
+        ${
+          website
+          ?
+          `<a
+            class="link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="${escapeHTML(website)}">
+
+            Website ↗
+
+          </a>`
+          :
+          ""
+        }
+
+        ${
+          phone
+          ?
+          `<a
+            class="link"
+            href="tel:${escapeHTML(phone.replace(/[^+\d]/g,""))}">
+
+            Call
+
+          </a>`
+          :
+          ""
+        }
+
+      </div>
+
+    </div>
+
+  `;
+
+}
+
+
+async function runOverpass(
+  query,
+  title,
+  description
+){
+
+  openModal(`
+
+    <h2>${escapeHTML(title)}</h2>
+
+    <p>
+      Searching Bangkok open data...
+    </p>
+
+  `);
+
+
+  try{
+
+    const response =
+      await fetch(
+        OVERPASS_ENDPOINT,
+        {
+          method:"POST",
+          headers:{
+            "Content-Type":
+              "text/plain;charset=UTF-8"
+          },
+          body:query
+        }
+      );
+
+
+    if(!response.ok){
+
+      throw new Error(
+        "Open-data service unavailable"
+      );
+
+    }
+
+
+    const data =
+      await response.json();
+
+
+    const cards =
+      (data.elements || [])
+      .slice(0,40)
+      .map(makeOSMCard);
+
+
+    showOpenDataResults(
+      title,
+      description,
+      cards
+    );
+
+  }
+
+  catch(error){
+
+    openModal(`
+
+      <h2>${escapeHTML(title)}</h2>
+
+      <div class="notice">
+
+        The public open-data service is
+        temporarily busy or unavailable.
+
+        Please try again shortly.
+
+      </div>
+
+      <p>
+
+        <a
+          class="gold-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.openstreetmap.org/">
+
+          Open OpenStreetMap ↗
+
+        </a>
+
+      </p>
+
+    `);
+
+  }
+
+}
+
+
+/* ======================================================
+   RESTAURANTS
+   ====================================================== */
+
+function findRestaurants(){
+
+  runOverpass(
+
+    `[out:json][timeout:25];
+    (
+      nwr["amenity"="restaurant"](${BANGKOK_BBOX});
+      nwr["amenity"="cafe"](${BANGKOK_BBOX});
+      nwr["amenity"="fast_food"](${BANGKOK_BBOX});
+      nwr["amenity"="food_court"](${BANGKOK_BBOX});
+    );
+    out center tags;`,
+
+    "Bangkok Restaurant Finder",
+
+    "Restaurants, cafés and food venues represented in OpenStreetMap."
+
+  );
+
+}
+
+
+$("#restaurantSearchBtn")
+.addEventListener(
+  "click",
+  findRestaurants
+);
+
+
+$("#restaurantTopBtn")
+.addEventListener(
+  "click",
+  findRestaurants
+);
+
+
+/* ======================================================
+   MUAY THAI / SPORTS
+   ====================================================== */
+
+$("#sportsBtn")
+.addEventListener("click",()=>{
+
+  runOverpass(
+
+    `[out:json][timeout:25];
+    (
+      nwr["sport"="martial_arts"](${BANGKOK_BBOX});
+      nwr["sport"="boxing"](${BANGKOK_BBOX});
+      nwr["sport"="kickboxing"](${BANGKOK_BBOX});
+      nwr["leisure"="sports_centre"](${BANGKOK_BBOX});
+      nwr["name"~"Muay|Thai Boxing|มวย",i](${BANGKOK_BBOX});
+    );
+    out center tags;`,
+
+    "Muay Thai & Sports",
+
+    "Muay Thai, boxing, martial arts and sports venues represented in OpenStreetMap."
+
+  );
+
+});
+
+
+/* ======================================================
+   LOCAL BUSINESS DIRECTORY
+   ====================================================== */
+
+function findBusinesses(){
+
+  runOverpass(
+
+    `[out:json][timeout:25];
+    (
+      nwr["shop"](${BANGKOK_BBOX});
+      nwr["office"](${BANGKOK_BBOX});
+      nwr["craft"](${BANGKOK_BBOX});
+    );
+    out center tags;`,
+
+    "Bangkok Local Business Directory",
+
+    "A sample of Bangkok shops, offices and businesses represented in OpenStreetMap."
+
+  );
+
+}
+
+
+$("#businessBtn")
+.addEventListener(
+  "click",
+  findBusinesses
+);
+
+
+$("#businessDirectoryBtn")
+.addEventListener(
+  "click",
+  findBusinesses
+);
+
+
+/* ======================================================
+   GDELT BANGKOK NEWS
+   ====================================================== */
+
+$("#newsBtn")
+.addEventListener("click",async()=>{
+
+  openModal(`
+
+    <h2>Latest Bangkok News</h2>
+
+    <p>
+      Loading current Bangkok coverage...
+    </p>
+
+  `);
+
+
+  try{
+
+    const endpoint =
+      "https://api.gdeltproject.org/api/v2/doc/doc" +
+      "?query=Bangkok" +
+      "&mode=artlist" +
+      "&maxrecords=30" +
+      "&format=json" +
+      "&sort=datedesc";
+
+
+    const response =
+      await fetch(
+        endpoint,
+        {cache:"no-store"}
+      );
+
+
+    if(!response.ok){
+
+      throw new Error(
+        "News service unavailable"
+      );
+
+    }
+
+
+    const data =
+      await response.json();
+
+
+    const articles =
+      (data.articles || [])
+      .slice(0,25);
+
+
+    const articleHTML =
+      articles.map(article=>{
+
+        return `
+
+          <div class="result">
+
+            <strong>
+              ${escapeHTML(
+                article.title ||
+                "Untitled story"
+              )}
+            </strong>
+
+            <div class="result-meta">
+
+              ${escapeHTML(
+                article.domain ||
+                "Publisher"
+              )}
+
+              ${
+                article.seendate
+                ?
+                " · " +
+                escapeHTML(
+                  article.seendate
+                )
+                :
+                ""
+              }
+
+            </div>
+
+            <a
+              class="link"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="${escapeHTML(
+                article.url || "#"
+              )}">
+
+              Read Original ↗
+
+            </a>
+
+          </div>
+
+        `;
+
+      }).join("");
+
+
+    openModal(`
+
+      <h2>Latest Bangkok News</h2>
+
+      <p>
+        Current Bangkok-related search results.
+        Each story opens at the original publisher.
+      </p>
+
+      ${
+        articleHTML ||
+        `<div class="notice">
+          No current stories were returned.
+        </div>`
+      }
+
+      <p style="
+        font-size:11px;
+        color:#738692;
+        margin-top:18px;
+      ">
+
+        News discovery powered by GDELT.
+        Article content belongs to the
+        original publishers.
+
+      </p>
+
+    `);
+
+  }
+
+  catch(error){
+
+    openModal(`
+
+      <h2>Latest Bangkok News</h2>
+
+      <div class="notice">
+
+        The public news service is
+        temporarily unavailable.
+
+        Please try again shortly.
+
+      </div>
+
+      <p>
+
+        <a
+          class="gold-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.gdeltproject.org/">
+
+          Open GDELT ↗
+
+        </a>
+
+      </p>
+
+    `);
+
+  }
+
+});
+
+
+/* ======================================================
+   PRIVACY
+   ====================================================== */
+
+$("#privacyBtn")
+.addEventListener("click",event=>{
+
+  event.preventDefault();
+
+
+  openModal(`
+
+    <h2>Privacy</h2>
+
+    <p>
+
+      BangkokWeekly.com does not require
+      visitors to create an account in
+      this version of the website.
+
+    </p>
+
+    <p>
+
+      Language preferences and optional
+      local ratings may be stored in the
+      visitor's own browser using
+      localStorage.
+
+    </p>
+
+    <p>
+
+      Live weather requests may be sent
+      to the weather service used by the
+      website. Open-data searches may be
+      sent to public data services such
+      as OpenStreetMap/Overpass and GDELT.
+
+    </p>
+
+    <p>
+
+      External websites have their own
+      privacy policies and terms.
+
+    </p>
+
+    <p>
+
+      If BangkokWeekly.com later adds
+      advertising, accounts, analytics,
+      public reviews, forms or business
+      submissions, its privacy policy
+      should be updated accordingly.
+
+    </p>
+
+  `);
+
+});
+
+
+/* ======================================================
+   TERMS
+   ====================================================== */
+
+$("#termsBtn")
+.addEventListener("click",event=>{
+
+  event.preventDefault();
+
+
+  openModal(`
+
+    <h2>Terms & Disclaimer</h2>
+
+    <p>
+
+      BangkokWeekly.com is an independent
+      information and discovery website.
+
+    </p>
+
+    <p>
+
+      BangkokWeekly.com does not guarantee
+      the accuracy, completeness,
+      availability, prices, ratings,
+      schedules, opening hours, legal
+      information, immigration information,
+      medical information or third-party
+      content shown or linked through the
+      website.
+
+    </p>
+
+    <p>
+
+      Visa requirements, Thai laws,
+      transportation fares, schedules,
+      property rules and other important
+      information can change.
+
+      Verify important information directly
+      with the responsible government
+      authority, business or qualified
+      professional before acting on it.
+
+    </p>
+
+    <p>
+
+      BangkokWeekly.com does not imply
+      endorsement by or affiliation with
+      the Thai government, Tourism Authority
+      of Thailand, U.S. Embassy, BTS,
+      airlines, hotels, restaurants,
+      hospitals, banks or other third-party
+      organizations.
+
+    </p>
+
+    <p>
+
+      Third-party names, trademarks and
+      service marks remain the property
+      of their respective owners.
+
+    </p>
+
+  `);
+
+});
+
+
+/* ======================================================
+   LOCAL DATA
+   ====================================================== */
+
+$("#dataBtn")
+.addEventListener("click",event=>{
+
+  event.preventDefault();
+
+
+  openModal(`
+
+    <h2>My Local Data</h2>
+
+    <p>
+
+      BangkokWeekly.com currently stores
+      only your language preference and
+      optional ratings on this device.
+
+    </p>
+
+    <pre style="
+      background:#f3f6f7;
+      padding:13px;
+      border-radius:10px;
+      overflow:auto;
+    ">${escapeHTML(
+      JSON.stringify(
+        {
+          language:
+            localStorage.getItem(
+              "bangkokweekly_language"
+            ),
+
+          ratings:
+            getRatings()
+        },
+        null,
+        2
+      )
+    )}</pre>
+
+    <button
+      class="gold-btn"
+      id="clearLocalData"
+      style="border:0;cursor:pointer">
+
+      Clear My Local Data
+
+    </button>
+
+  `);
+
+
+  $("#clearLocalData")
+  .addEventListener("click",()=>{
+
+    localStorage.removeItem(
+      "bangkokweekly_language"
+    );
+
+    localStorage.removeItem(
+      "bangkokweekly_ratings"
+    );
+
+    closeModal();
+
+    toast(
+      "BangkokWeekly local data cleared."
+    );
+
+  });
+
+});
+
+
+/* ======================================================
+   PRIVATE ADMIN
+   ======================================================
+
+   IMPORTANT:
+
+   Do NOT put a real admin password directly
+   inside this HTML file.
+
+   GitHub Pages is public and visitors can
+   inspect client-side source code.
+
+   Detailed visitor tracking, raw IP storage,
+   city/country records and password-protected
+   analytics require a secure server-side
+   backend.
+
+   The link is intentionally kept at the very
+   bottom of the website instead of the main
+   navigation.
+   ====================================================== */
+
+
+$("#adminFooter")
+.addEventListener("click",event=>{
+
+  event.preventDefault();
+
+
+  openModal(`
+
+    <h2>Private Admin</h2>
+
+    <div class="notice">
+
+      <strong>
+        Secure analytics backend required.
+      </strong>
+
+      <br><br>
+
+      The public website is ready for a
+      private analytics system, but a real
+      administrator password should never
+      be stored inside a public GitHub
+      HTML file.
+
+    </div>
+
+    <p>
+
+      A secure future administrator
+      dashboard can include:
+
+    </p>
+
+    <ul>
+
+      <li>Total visitors</li>
+
+      <li>Visitors by day</li>
+
+      <li>Date and time</li>
+
+      <li>Country</li>
+
+      <li>Region / state</li>
+
+      <li>City</li>
+
+      <li>Page visited</li>
+
+      <li>Traffic source</li>
+
+      <li>Device type</li>
+
+      <li>Private IP logging only when
+          legally appropriate and properly
+          disclosed</li>
+
+    </ul>
+
+    <p>
+
+      Authentication and visitor records
+      should be stored securely on the
+      server rather than inside this page.
+
+    </p>
+
+  `);
+
+});
+
+
+/* ======================================================
+   YEAR
+   ====================================================== */
+
+$("#year").textContent =
+  new Date().getFullYear();
+
 </script>
+
 </body>
 </html>
