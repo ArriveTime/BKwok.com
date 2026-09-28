@@ -2,12 +2,103 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#07131f">
+<meta name="color-scheme" content="light">
 
-<title>BangkokWeekly.com | Everything Bangkok</title>
+<!-- =========================================================
+     BANGKOKWEEKLY.COM
+     Bangkok Weekly
+     ========================================================= -->
 
-<meta name="description" content="BangkokWeekly.com — Bangkok news, Thai Lottery information, food, restaurants, temples, nightlife, Muay Thai, hotels, shopping, transportation, weather, visas, business, travel information and daily horoscope.">
+<title>Bangkok Weekly | Bangkok News, Weather, Food, Lottery, Travel & Things to Do</title>
+
+<meta name="description" content="Bangkok Weekly is your guide to Bangkok, Thailand — current weather, Bangkok time, news, Thai Lottery information, restaurants, street food, temples, Muay Thai, nightlife, hotels, shopping, BTS, MRT, flights, visas, hospitals, business listings, travel information and daily horoscope.">
+
+<meta name="keywords" content="Bangkok, Bangkok Thailand, Bangkok news, Bangkok weather, Bangkok food, Bangkok restaurants, Bangkok street food, Thai lottery, Thailand lottery, Bangkok temples, Bangkok hotels, Bangkok nightlife, Bangkok shopping, Muay Thai Bangkok, BTS Bangkok, MRT Bangkok, Bangkok travel, Bangkok tourism, Bangkok visa, Bangkok flights, Bangkok real estate, Bangkok hospitals, Bangkok business, Bangkok horoscope, things to do in Bangkok">
+
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="bingbot" content="index,follow">
+
+<meta name="author" content="Bangkok Weekly">
+<meta name="publisher" content="BangkokWeekly.com">
+<meta name="application-name" content="Bangkok Weekly">
+<meta name="apple-mobile-web-app-title" content="Bangkok Weekly">
+<meta name="format-detection" content="telephone=yes">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Keep the working GitHub Pages URL canonical until BangkokWeekly.com
+     is directly connected to GitHub Pages. -->
+<link rel="canonical" href="https://arrivetime.github.io/BKwok.com/">
+
+<link rel="alternate" hreflang="en" href="https://arrivetime.github.io/BKwok.com/">
+<link rel="alternate" hreflang="th" href="https://arrivetime.github.io/BKwok.com/">
+<link rel="alternate" hreflang="x-default" href="https://arrivetime.github.io/BKwok.com/">
+
+<!-- OPEN GRAPH / SOCIAL -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bangkok Weekly">
+<meta property="og:title" content="Bangkok Weekly | Everything Bangkok in One Smart Place">
+<meta property="og:description" content="Discover Bangkok weather, news, food, Thai Lottery information, temples, Muay Thai, nightlife, hotels, shopping, transportation, travel information and more.">
+<meta property="og:url" content="https://arrivetime.github.io/BKwok.com/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="th_TH">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bangkok Weekly | Everything Bangkok">
+<meta name="twitter:description" content="Bangkok news, weather, food, lottery information, temples, Muay Thai, nightlife, hotels, transportation, shopping and travel resources.">
+
+<!-- GEO -->
+<meta name="geo.region" content="TH-10">
+<meta name="geo.placename" content="Bangkok">
+<meta name="geo.position" content="13.7563;100.5018">
+<meta name="ICBM" content="13.7563, 100.5018">
+
+<!-- PERFORMANCE -->
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preconnect" href="https://api.open-meteo.com">
+<link rel="dns-prefetch" href="//www.google.com">
+<link rel="dns-prefetch" href="//www.openstreetmap.org">
+
+<!-- STRUCTURED DATA -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebSite",
+      "@id":"https://arrivetime.github.io/BKwok.com/#website",
+      "url":"https://arrivetime.github.io/BKwok.com/",
+      "name":"Bangkok Weekly",
+      "alternateName":"BangkokWeekly.com",
+      "description":"Bangkok information and discovery website covering weather, news, food, travel, transportation, attractions, Thai Lottery information and local resources.",
+      "inLanguage":["en","th"]
+    },
+    {
+      "@type":"Organization",
+      "@id":"https://arrivetime.github.io/BKwok.com/#organization",
+      "name":"Bangkok Weekly",
+      "url":"https://arrivetime.github.io/BKwok.com/"
+    },
+    {
+      "@type":"WebPage",
+      "@id":"https://arrivetime.github.io/BKwok.com/#webpage",
+      "url":"https://arrivetime.github.io/BKwok.com/",
+      "name":"Bangkok Weekly | Everything Bangkok",
+      "isPartOf":{
+        "@id":"https://arrivetime.github.io/BKwok.com/#website"
+      },
+      "about":{
+        "@type":"City",
+        "name":"Bangkok",
+        "alternateName":"Krung Thep Maha Nakhon"
+      },
+      "inLanguage":["en","th"]
+    }
+  ]
+}
+</script>
 
 <style>
 :root{
@@ -28,11 +119,15 @@
 }
 
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+
+html{
+  scroll-behavior:smooth;
+  scroll-padding-top:100px;
+}
 
 body{
   margin:0;
-  font-family:Inter,Arial,Helvetica,sans-serif;
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,Helvetica,sans-serif;
   background:#f6f8fa;
   color:var(--text);
   line-height:1.55;
@@ -40,6 +135,18 @@ body{
 
 a{color:inherit}
 button,input{font:inherit}
+
+button,
+a{
+  -webkit-tap-highlight-color:transparent;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible{
+  outline:3px solid var(--gold);
+  outline-offset:3px;
+}
 
 .topbar{
   background:#020b12;
@@ -113,6 +220,7 @@ header{
   font-weight:1000;
   color:#07131f;
   background:linear-gradient(145deg,#f7dd8c,#b5791e);
+  box-shadow:0 7px 20px rgba(231,182,74,.18);
 }
 
 .brand strong{
@@ -133,7 +241,10 @@ nav{
   justify-content:center;
   flex:1;
   overflow:auto;
+  scrollbar-width:none;
 }
+
+nav::-webkit-scrollbar{display:none}
 
 nav a{
   color:#c9d6de;
@@ -206,12 +317,12 @@ nav a:hover{
   font-size:clamp(3rem,7vw,6.5rem);
   line-height:.92;
   letter-spacing:-.06em;
-  max-width:900px;
+  max-width:950px;
   margin:15px 0;
 }
 
 .hero p{
-  max-width:760px;
+  max-width:780px;
   color:#dbe5ea;
   font-size:18px;
 }
@@ -261,6 +372,12 @@ nav a:hover{
   text-align:center;
   text-decoration:none;
   backdrop-filter:blur(8px);
+  transition:.2s;
+}
+
+.quick a:hover{
+  transform:translateY(-2px);
+  border-color:rgba(246,217,130,.55);
 }
 
 .quick b{
@@ -582,6 +699,12 @@ section{
   border:1px solid var(--line);
   border-radius:17px;
   padding:18px;
+  transition:.2s;
+}
+
+.dir:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 28px rgba(0,0,0,.06);
 }
 
 .dir h3{
@@ -783,6 +906,7 @@ footer a:hover{
   border-radius:12px;
   padding:12px 16px;
   opacity:0;
+  pointer-events:none;
   transform:translateY(15px);
   transition:.2s;
   box-shadow:var(--shadow);
@@ -822,6 +946,15 @@ footer a:hover{
   .footer-grid{grid-template-columns:1fr}
   .zodiac-grid{grid-template-columns:repeat(2,1fr)}
 }
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*:before,*:after{
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+  }
+}
 </style>
 </head>
 
@@ -833,6 +966,7 @@ footer a:hover{
       <span class="live-dot"></span>
       <span id="portalText">Bangkok live portal</span>
     </div>
+
     <div>
       Bangkok GMT+7 ·
       <a href="tel:1155">Tourist Police 1155</a> ·
@@ -845,7 +979,7 @@ footer a:hover{
 <header>
 <div class="nav">
 
-<a class="brand" href="#home">
+<a class="brand" href="#home" aria-label="Bangkok Weekly home">
 <span class="logo">BW</span>
 <span>
 <strong>BangkokWeekly.com</strong>
@@ -853,7 +987,7 @@ footer a:hover{
 </span>
 </a>
 
-<nav>
+<nav aria-label="Main navigation">
 <a href="#live">Live</a>
 <a href="#lottery" class="lottery-nav">🎟 Lottery</a>
 <a href="#food">Food</a>
@@ -866,7 +1000,7 @@ footer a:hover{
 <a href="#explore">Explore Live</a>
 </nav>
 
-<button class="lang-btn" id="langBtn">ไทย</button>
+<button class="lang-btn" id="langBtn" type="button">ไทย</button>
 
 </div>
 </header>
@@ -889,9 +1023,12 @@ education and the practical information visitors and locals need.
 </p>
 
 <form class="search" id="searchForm">
-<input id="siteSearch" type="search"
+<input
+id="siteSearch"
+type="search"
+autocomplete="off"
 placeholder="Search lottery, restaurants, temples, hotels, BTS, visas, shopping..."
-aria-label="Search BangkokWeekly.com">
+aria-label="Search Bangkok Weekly">
 <button type="submit">Search</button>
 </form>
 
@@ -909,6 +1046,8 @@ aria-label="Search BangkokWeekly.com">
 </div>
 </section>
 
+<!-- LIVE BANGKOK -->
+
 <section id="live" class="dark">
 <div class="wrap">
 
@@ -917,9 +1056,10 @@ aria-label="Search BangkokWeekly.com">
 <div class="eyebrow">Live Bangkok</div>
 <h2>Bangkok right now</h2>
 </div>
+
 <p>
-Current Bangkok time plus live weather when the public weather service
-is available. Traffic and transportation link to current sources.
+Current Bangkok time and current weather. Weather automatically checks
+for updated conditions every 30 minutes while this page remains open.
 </p>
 </div>
 
@@ -930,14 +1070,14 @@ is available. Traffic and transportation link to current sources.
 <div class="temp" id="temp">--°</div>
 <strong id="weatherText">Loading weather...</strong>
 <div id="weatherMeta"></div>
-<div class="source" id="weatherUpdated">Open-Meteo</div>
+<div class="source" id="weatherUpdated">Connecting to weather service...</div>
 </div>
 
 <div class="live-box">
 <div class="eyebrow">Bangkok Time</div>
 <div class="time" id="bkkTime">--:--:--</div>
 <div id="bkkDate">Loading...</div>
-<div class="source">Asia/Bangkok · GMT+7</div>
+<div class="source">Asia/Bangkok · GMT+7 · Updates every second</div>
 </div>
 
 <div class="live-box">
@@ -946,15 +1086,21 @@ is available. Traffic and transportation link to current sources.
 <p style="color:#a9bdc8">
 Open Bangkok Metropolitan Administration traffic information.
 </p>
-<a class="gold-btn" target="_blank" rel="noopener noreferrer"
+
+<a class="gold-btn"
+target="_blank"
+rel="noopener noreferrer"
 href="https://traffic.bangkok.go.th/">
 BMA Traffic ↗
 </a>
+
 </div>
 
 </div>
 </div>
 </section>
+
+<!-- LOTTERY -->
 
 <section id="lottery" class="lottery-section">
 <div class="wrap">
@@ -1024,6 +1170,8 @@ GLO OFFICIAL WEBSITE ↗
 </div>
 </section>
 
+<!-- FOOD -->
+
 <section id="food">
 <div class="wrap">
 
@@ -1032,6 +1180,7 @@ GLO OFFICIAL WEBSITE ↗
 <div class="eyebrow">Eat Bangkok</div>
 <h2>Food is the main event.</h2>
 </div>
+
 <p>
 From Yaowarat street food to fine dining, food markets and neighborhood
 restaurants throughout Bangkok.
@@ -1042,59 +1191,118 @@ restaurants throughout Bangkok.
 
 <article class="card searchable"
 data-keywords="yaowarat chinatown street food noodles seafood">
+
 <div class="picture"
-style="background-image:url('https://images.unsplash.com/photo-1628324716243-0c9c29971a58?auto=format&fit=crop&w=1200&q=82')"></div>
+style="background-image:url('https://images.unsplash.com/photo-1628324716243-0c9c29971a58?auto=format&fit=crop&w=1200&q=82')">
+</div>
+
 <div class="card-body">
 <span class="tag">Street Food</span>
 <h3>Yaowarat / Chinatown</h3>
-<p>Explore Bangkok's famous Chinatown restaurants, street food, noodles, seafood and desserts.</p>
+
+<p>
+Explore Bangkok's famous Chinatown restaurants, street food,
+noodles, seafood and desserts.
+</p>
+
 <div class="links">
-<a class="link" target="_blank" rel="noopener noreferrer"
-href="https://www.google.com/maps/search/?api=1&query=Yaowarat+Bangkok">Map ↗</a>
-<button class="link rateBtn" data-name="Yaowarat Chinatown">Rate</button>
+
+<a class="link"
+target="_blank"
+rel="noopener noreferrer"
+href="https://www.google.com/maps/search/?api=1&query=Yaowarat+Bangkok">
+Map ↗
+</a>
+
+<button class="link rateBtn"
+type="button"
+data-name="Yaowarat Chinatown">
+Rate
+</button>
+
 </div>
 </div>
 </article>
 
 <article class="card searchable"
 data-keywords="fine dining michelin luxury restaurant">
+
 <div class="picture"
-style="background-image:url('https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=82')"></div>
+style="background-image:url('https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=82')">
+</div>
+
 <div class="card-body">
 <span class="tag">Fine Dining</span>
 <h3>Bangkok Fine Dining</h3>
-<p>Explore acclaimed restaurants, tasting menus and special-occasion dining.</p>
+
+<p>
+Explore acclaimed restaurants, tasting menus and special-occasion dining.
+</p>
+
 <div class="links">
-<a class="link" target="_blank" rel="noopener noreferrer"
-href="https://guide.michelin.com/en/th/bangkok-region/bangkok/restaurants">Michelin ↗</a>
-<a class="link" target="_blank" rel="noopener noreferrer"
-href="https://www.google.com/maps/search/?api=1&query=fine+dining+Bangkok">Maps ↗</a>
+
+<a class="link"
+target="_blank"
+rel="noopener noreferrer"
+href="https://guide.michelin.com/en/th/bangkok-region/bangkok/restaurants">
+Michelin ↗
+</a>
+
+<a class="link"
+target="_blank"
+rel="noopener noreferrer"
+href="https://www.google.com/maps/search/?api=1&query=fine+dining+Bangkok">
+Maps ↗
+</a>
+
 </div>
 </div>
 </article>
 
 <article class="card searchable"
 data-keywords="thai food pad thai curry tom yum som tam">
+
 <div class="picture"
-style="background-image:url('https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&fit=crop&w=1200&q=82')"></div>
+style="background-image:url('https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&fit=crop&w=1200&q=82')">
+</div>
+
 <div class="card-body">
 <span class="tag">Thai Food</span>
 <h3>Thai Food Explorer</h3>
-<p>Pad Thai, som tam, tom yum, curries, grilled dishes and regional Thai cuisine.</p>
-<button class="link" id="restaurantTopBtn">Find Restaurants</button>
+
+<p>
+Pad Thai, som tam, tom yum, curries, grilled dishes and regional Thai cuisine.
+</p>
+
+<button class="link" type="button" id="restaurantTopBtn">
+Find Restaurants
+</button>
+
 </div>
 </article>
 
 <article class="card searchable"
 data-keywords="markets food market outdoor chatuchak floating">
+
 <div class="picture"
-style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=82')"></div>
+style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=82')">
+</div>
+
 <div class="card-body">
 <span class="tag">Markets</span>
 <h3>Bangkok Food Markets</h3>
-<p>Discover food markets, outdoor markets and Bangkok neighborhood markets.</p>
-<a class="link" target="_blank" rel="noopener noreferrer"
-href="https://www.google.com/maps/search/?api=1&query=Bangkok+food+market">Find Markets ↗</a>
+
+<p>
+Discover food markets, outdoor markets and Bangkok neighborhood markets.
+</p>
+
+<a class="link"
+target="_blank"
+rel="noopener noreferrer"
+href="https://www.google.com/maps/search/?api=1&query=Bangkok+food+market">
+Find Markets ↗
+</a>
+
 </div>
 </article>
 
@@ -1102,7 +1310,7 @@ href="https://www.google.com/maps/search/?api=1&query=Bangkok+food+market">Find 
 </div>
 </section>
 
-<!-- BANGKOK WEEKLY PICK - AMAZON AFFILIATE -->
+<!-- AFFILIATE -->
 
 <section style="padding:28px 20px;background:#f6f8fa;">
 <div class="wrap">
@@ -1148,7 +1356,7 @@ margin:0;
 color:#687d8b;
 font-size:14px;
 ">
-A hand-picked product we think may be useful for travelers
+A hand-picked product that may be useful for travelers
 or everyday life in Bangkok.
 </p>
 
@@ -1157,7 +1365,7 @@ margin-top:7px;
 font-size:11px;
 color:#7b8790;
 ">
-Paid link · Commissions earned
+Paid affiliate link · Commissions may be earned
 </div>
 
 </div>
@@ -1183,6 +1391,8 @@ View on Amazon ↗
 </div>
 </section>
 
+<!-- SEE AND DO -->
+
 <section id="see" class="band">
 <div class="wrap">
 
@@ -1191,58 +1401,114 @@ View on Amazon ↗
 <div class="eyebrow">See Bangkok</div>
 <h2>Temples, landmarks & experiences</h2>
 </div>
-<p>Discover Bangkok's famous attractions, parks, shopping districts and entertainment areas.</p>
+
+<p>
+Discover Bangkok's famous attractions, parks, shopping districts
+and entertainment areas.
+</p>
 </div>
 
 <div class="grid">
 
-<article class="card searchable" data-keywords="wat arun temple dawn river">
+<article class="card searchable"
+data-keywords="wat arun temple dawn river">
+
 <div class="picture"
-style="background-image:url('https://images.unsplash.com/photo-1755251042986-91270ffd76f5?auto=format&fit=crop&w=1200&q=82')"></div>
+style="background-image:url('https://images.unsplash.com/photo-1755251042986-91270ffd76f5?auto=format&fit=crop&w=1200&q=82')">
+</div>
+
 <div class="card-body">
 <span class="tag">Temple</span>
 <h3>Wat Arun</h3>
-<p>Bangkok's iconic Temple of Dawn on the Chao Phraya River.</p>
-<a class="link" target="_blank" rel="noopener noreferrer"
-href="https://www.google.com/maps/search/?api=1&query=Wat+Arun+Bangkok">Directions ↗</a>
+
+<p>
+Bangkok's iconic Temple of Dawn on the Chao Phraya River.
+</p>
+
+<a class="link"
+target="_blank"
+rel="noopener noreferrer"
+href="https://www.google.com/maps/search/?api=1&query=Wat+Arun+Bangkok">
+Directions ↗
+</a>
+
 </div>
 </article>
 
-<article class="card searchable" data-keywords="grand palace wat phra kaew emerald buddha">
+<article class="card searchable"
+data-keywords="grand palace wat phra kaew emerald buddha">
+
 <div class="picture"
-style="background-image:url('https://images.unsplash.com/photo-1678915554115-a5e2de853191?auto=format&fit=crop&w=1200&q=82')"></div>
+style="background-image:url('https://images.unsplash.com/photo-1678915554115-a5e2de853191?auto=format&fit=crop&w=1200&q=82')">
+</div>
+
 <div class="card-body">
 <span class="tag">Historic Bangkok</span>
 <h3>Grand Palace</h3>
-<p>Explore Bangkok's Grand Palace and Wat Phra Kaew area.</p>
-<a class="link" target="_blank" rel="noopener noreferrer"
-href="https://www.google.com/maps/search/?api=1&query=Grand+Palace+Bangkok">Directions ↗</a>
+
+<p>
+Explore Bangkok's Grand Palace and Wat Phra Kaew area.
+</p>
+
+<a class="link"
+target="_blank"
+rel="noopener noreferrer"
+href="https://www.google.com/maps/search/?api=1&query=Grand+Palace+Bangkok">
+Directions ↗
+</a>
+
 </div>
 </article>
 
-<article class="card searchable" data-keywords="shopping iconsiam siam chatuchak malls">
+<article class="card searchable"
+data-keywords="shopping iconsiam siam chatuchak malls centralworld">
+
 <div class="card-body">
 <span class="tag">Shopping</span>
 <h3>Bangkok Shopping</h3>
-<p>ICONSIAM, Siam, CentralWorld, Chatuchak, markets, luxury stores and local shopping districts.</p>
-<a class="link" target="_blank" rel="noopener noreferrer"
-href="https://www.google.com/maps/search/?api=1&query=shopping+Bangkok">Shopping Map ↗</a>
+
+<p>
+ICONSIAM, Siam, CentralWorld, Chatuchak, markets,
+luxury stores and local shopping districts.
+</p>
+
+<a class="link"
+target="_blank"
+rel="noopener noreferrer"
+href="https://www.google.com/maps/search/?api=1&query=shopping+Bangkok">
+Shopping Map ↗
+</a>
+
 </div>
 </article>
 
-<article class="card searchable" data-keywords="nightlife rooftop bars clubs entertainment">
+<article class="card searchable"
+data-keywords="nightlife rooftop bars clubs entertainment music">
+
 <div class="card-body">
 <span class="tag">Nightlife</span>
 <h3>Bangkok After Dark</h3>
-<p>Rooftop bars, live music, entertainment districts, clubs and nighttime experiences.</p>
-<a class="link" target="_blank" rel="noopener noreferrer"
-href="https://www.google.com/maps/search/?api=1&query=Bangkok+nightlife">Explore Nightlife ↗</a>
+
+<p>
+Rooftop bars, live music, entertainment districts,
+clubs and nighttime experiences.
+</p>
+
+<a class="link"
+target="_blank"
+rel="noopener noreferrer"
+href="https://www.google.com/maps/search/?api=1&query=Bangkok+nightlife">
+Explore Nightlife ↗
+</a>
+
 </div>
 </article>
 
 </div>
 </div>
 </section>
+
+<!-- TRANSPORT -->
 
 <section id="transport" class="dark">
 <div class="wrap">
@@ -1252,98 +1518,198 @@ href="https://www.google.com/maps/search/?api=1&query=Bangkok+nightlife">Explore
 <div class="eyebrow">Move Around Bangkok</div>
 <h2>BTS, MRT, airports & traffic</h2>
 </div>
-<p>Transportation information with direct links to operators and current travel resources.</p>
+
+<p>
+Transportation information with direct links to operators
+and current travel resources.
+</p>
 </div>
 
 <div class="grid">
 
-<article class="card searchable" data-keywords="bts skytrain train transport">
+<article class="card searchable"
+data-keywords="bts skytrain train transport">
+
 <div class="card-body">
 <span class="tag">BTS</span>
 <h3>BTS Skytrain</h3>
-<p>Routes, stations, ticketing and current fare information.</p>
-<a class="link" target="_blank" rel="noopener noreferrer"
-href="https://www.bts.co.th/eng/">BTS Official ↗</a>
+
+<p>
+Routes, stations, ticketing and current fare information.
+</p>
+
+<a class="link"
+target="_blank"
+rel="noopener noreferrer"
+href="https://www.bts.co.th/eng/">
+BTS Official ↗
+</a>
+
 </div>
 </article>
 
-<article class="card searchable" data-keywords="mrt subway train transport">
+<article class="card searchable"
+data-keywords="mrt subway train transport">
+
 <div class="card-body">
 <span class="tag">MRT</span>
 <h3>Bangkok MRT</h3>
-<p>Bangkok underground and urban rail information.</p>
-<a class="link" target="_blank" rel="noopener noreferrer"
-href="https://www.google.com/maps/search/?api=1&query=MRT+Bangkok">MRT Map ↗</a>
+
+<p>
+Bangkok underground and urban rail information.
+</p>
+
+<a class="link"
+target="_blank"
+rel="noopener noreferrer"
+href="https://www.google.com/maps/search/?api=1&query=MRT+Bangkok">
+MRT Map ↗
+</a>
+
 </div>
 </article>
 
-<article class="card searchable" data-keywords="airport bkk suvarnabhumi flights">
+<article class="card searchable"
+data-keywords="airport bkk suvarnabhumi flights">
+
 <div class="card-body">
 <span class="tag">BKK</span>
 <h3>Suvarnabhumi Airport</h3>
-<p>Flights, airport information and passenger services.</p>
-<a class="link" target="_blank" rel="noopener noreferrer"
-href="https://suvarnabhumi.airportthai.co.th/">Airport ↗</a>
+
+<p>
+Flights, airport information and passenger services.
+</p>
+
+<a class="link"
+target="_blank"
+rel="noopener noreferrer"
+href="https://suvarnabhumi.airportthai.co.th/">
+Airport ↗
+</a>
+
 </div>
 </article>
 
-<article class="card searchable" data-keywords="airport dmk don mueang flights">
+<article class="card searchable"
+data-keywords="airport dmk don mueang flights">
+
 <div class="card-body">
 <span class="tag">DMK</span>
 <h3>Don Mueang Airport</h3>
-<p>Flight information and airport services.</p>
-<a class="link" target="_blank" rel="noopener noreferrer"
-href="https://donmueang.airportthai.co.th/">Airport ↗</a>
+
+<p>
+Flight information and airport services.
+</p>
+
+<a class="link"
+target="_blank"
+rel="noopener noreferrer"
+href="https://donmueang.airportthai.co.th/">
+Airport ↗
+</a>
+
 </div>
 </article>
 
-<article class="card searchable" data-keywords="flights airfare airlines travel">
+<article class="card searchable"
+data-keywords="flights airfare airlines travel">
+
 <div class="card-body">
 <span class="tag">Flights</span>
 <h3>Find Flights</h3>
-<p>Compare Bangkok flight routes and book with your selected provider.</p>
+
+<p>
+Compare Bangkok flight routes and book with your selected provider.
+</p>
+
 <div class="links">
-<a class="link" target="_blank" rel="noopener noreferrer"
-href="https://www.google.com/travel/flights">Google Flights ↗</a>
-<a class="link" target="_blank" rel="noopener noreferrer"
-href="https://www.skyscanner.com/">Skyscanner ↗</a>
+
+<a class="link"
+target="_blank"
+rel="noopener noreferrer"
+href="https://www.google.com/travel/flights">
+Google Flights ↗
+</a>
+
+<a class="link"
+target="_blank"
+rel="noopener noreferrer"
+href="https://www.skyscanner.com/">
+Skyscanner ↗
+</a>
+
 </div>
 </div>
 </article>
 
-<article class="card searchable" data-keywords="traffic road driving">
+<article class="card searchable"
+data-keywords="traffic road driving">
+
 <div class="card-body">
 <span class="tag">Traffic</span>
 <h3>Bangkok Traffic</h3>
-<p>Check Bangkok Metropolitan Administration traffic information.</p>
-<a class="link" target="_blank" rel="noopener noreferrer"
-href="https://traffic.bangkok.go.th/">Traffic ↗</a>
+
+<p>
+Check Bangkok Metropolitan Administration traffic information.
+</p>
+
+<a class="link"
+target="_blank"
+rel="noopener noreferrer"
+href="https://traffic.bangkok.go.th/">
+Traffic ↗
+</a>
+
 </div>
 </article>
 
-<article class="card searchable" data-keywords="taxi grab ride transportation">
+<article class="card searchable"
+data-keywords="taxi ride transportation grab">
+
 <div class="card-body">
 <span class="tag">Taxi</span>
 <h3>Taxis & Ride Services</h3>
-<p>Find taxi and transportation options throughout Bangkok.</p>
-<a class="link" target="_blank" rel="noopener noreferrer"
-href="https://www.google.com/search?q=Bangkok+taxi+services">Search ↗</a>
+
+<p>
+Find taxi and transportation options throughout Bangkok.
+</p>
+
+<a class="link"
+target="_blank"
+rel="noopener noreferrer"
+href="https://www.google.com/search?q=Bangkok+taxi+services">
+Search ↗
+</a>
+
 </div>
 </article>
 
-<article class="card searchable" data-keywords="boat ferry river chao phraya">
+<article class="card searchable"
+data-keywords="boat ferry river chao phraya">
+
 <div class="card-body">
 <span class="tag">River</span>
 <h3>Boats & Ferries</h3>
-<p>Explore Chao Phraya River transportation and ferry locations.</p>
-<a class="link" target="_blank" rel="noopener noreferrer"
-href="https://www.google.com/maps/search/?api=1&query=Bangkok+river+ferry">River Map ↗</a>
+
+<p>
+Explore Chao Phraya River transportation and ferry locations.
+</p>
+
+<a class="link"
+target="_blank"
+rel="noopener noreferrer"
+href="https://www.google.com/maps/search/?api=1&query=Bangkok+river+ferry">
+River Map ↗
+</a>
+
 </div>
 </article>
 
 </div>
 </div>
 </section>
+
+<!-- STAY -->
 
 <section id="stay">
 <div class="wrap">
@@ -1353,56 +1719,95 @@ href="https://www.google.com/maps/search/?api=1&query=Bangkok+river+ferry">River
 <div class="eyebrow">Stay in Bangkok</div>
 <h2>Hotels, condos, homes & cars</h2>
 </div>
-<p>Find accommodations, rentals and travel services throughout Bangkok.</p>
+
+<p>
+Find accommodations, rentals and travel services throughout Bangkok.
+</p>
 </div>
 
 <div class="directory">
 
-<div class="dir searchable" data-keywords="hotel resort hostel">
+<div class="dir searchable" data-keywords="hotel resort hostel accommodation">
 <h3>🏨 Hotels & Resorts</h3>
 <p>Search Bangkok hotels by neighborhood, dates and price.</p>
-<a target="_blank" rel="noopener noreferrer"
-href="https://www.google.com/travel/hotels/Bangkok">Search Hotels ↗</a>
+
+<a target="_blank"
+rel="noopener noreferrer"
+href="https://www.google.com/travel/hotels/Bangkok">
+Search Hotels ↗
+</a>
 </div>
 
 <div class="dir searchable" data-keywords="condo apartment home rental">
 <h3>🏙️ Condos & Apartments</h3>
 <p>Explore current Bangkok condo and apartment listings.</p>
-<a target="_blank" rel="noopener noreferrer"
-href="https://www.google.com/search?q=Bangkok+condo+rentals">Find Rentals ↗</a>
+
+<a target="_blank"
+rel="noopener noreferrer"
+href="https://www.google.com/search?q=Bangkok+condo+rentals">
+Find Rentals ↗
+</a>
 </div>
 
 <div class="dir searchable" data-keywords="real estate property homes">
 <h3>🏠 Real Estate</h3>
-<p>Explore Bangkok property information. Foreign ownership rules should be independently verified.</p>
-<a target="_blank" rel="noopener noreferrer"
-href="https://www.google.com/search?q=Bangkok+real+estate">Real Estate ↗</a>
+
+<p>
+Explore Bangkok property information. Foreign ownership rules
+should be independently verified.
+</p>
+
+<a target="_blank"
+rel="noopener noreferrer"
+href="https://www.google.com/search?q=Bangkok+real+estate">
+Real Estate ↗
+</a>
 </div>
 
 <div class="dir searchable" data-keywords="car rental hire driving">
 <h3>🚗 Rental Cars</h3>
 <p>Search Bangkok car-rental providers and compare terms.</p>
-<a target="_blank" rel="noopener noreferrer"
-href="https://www.google.com/search?q=Bangkok+car+rental">Rental Cars ↗</a>
+
+<a target="_blank"
+rel="noopener noreferrer"
+href="https://www.google.com/search?q=Bangkok+car+rental">
+Rental Cars ↗
+</a>
 </div>
 
 <div class="dir searchable" data-keywords="travel agency tours guide">
 <h3>🧭 Tours & Travel Agencies</h3>
-<p>Find tours, guides, transfers and Bangkok experiences.</p>
-<a target="_blank" rel="noopener noreferrer"
-href="https://www.tourismthailand.org/">Thailand Tourism ↗</a>
+
+<p>
+Find tours, guides, transfers and Bangkok experiences.
+</p>
+
+<a target="_blank"
+rel="noopener noreferrer"
+href="https://www.tourismthailand.org/">
+Thailand Tourism ↗
+</a>
 </div>
 
-<div class="dir searchable" data-keywords="parks lumphini benjakitti">
+<div class="dir searchable" data-keywords="parks lumphini benjakitti recreation">
 <h3>🌳 Bangkok Parks</h3>
-<p>Find parks, gardens, walking and recreation areas.</p>
-<a target="_blank" rel="noopener noreferrer"
-href="https://www.google.com/maps/search/?api=1&query=parks+Bangkok">Parks Map ↗</a>
+
+<p>
+Find parks, gardens, walking and recreation areas.
+</p>
+
+<a target="_blank"
+rel="noopener noreferrer"
+href="https://www.google.com/maps/search/?api=1&query=parks+Bangkok">
+Parks Map ↗
+</a>
 </div>
 
 </div>
 </div>
 </section>
+
+<!-- DIRECTORY -->
 
 <section id="directory" class="band">
 <div class="wrap">
@@ -1412,55 +1817,96 @@ href="https://www.google.com/maps/search/?api=1&query=parks+Bangkok">Parks Map �
 <div class="eyebrow">Bangkok Directory</div>
 <h2>Daily life in Bangkok</h2>
 </div>
-<p>Banking, hospitals, education, translation, business services and practical Bangkok resources.</p>
+
+<p>
+Banking, hospitals, education, translation,
+business services and practical Bangkok resources.
+</p>
 </div>
 
 <div class="directory">
 
-<div class="dir searchable" data-keywords="hospital doctor medical emergency">
+<div class="dir searchable"
+data-keywords="hospital doctor medical emergency">
+
 <h3>🏥 Hospitals</h3>
 <p>Find hospitals and medical facilities throughout Bangkok.</p>
-<a target="_blank" rel="noopener noreferrer"
-href="https://www.google.com/maps/search/?api=1&query=hospitals+Bangkok">Find Hospitals ↗</a>
+
+<a target="_blank"
+rel="noopener noreferrer"
+href="https://www.google.com/maps/search/?api=1&query=hospitals+Bangkok">
+Find Hospitals ↗
+</a>
 </div>
 
-<div class="dir searchable" data-keywords="bank banking atm money">
+<div class="dir searchable"
+data-keywords="bank banking atm money">
+
 <h3>🏦 Banking & ATMs</h3>
 <p>Banking information and Bangkok financial services.</p>
-<a target="_blank" rel="noopener noreferrer"
-href="https://www.bot.or.th/en/home.html">Bank of Thailand ↗</a>
+
+<a target="_blank"
+rel="noopener noreferrer"
+href="https://www.bot.or.th/en/home.html">
+Bank of Thailand ↗
+</a>
 </div>
 
-<div class="dir searchable" data-keywords="school university education">
+<div class="dir searchable"
+data-keywords="school university education">
+
 <h3>🎓 Schools & Universities</h3>
 <p>Find international schools, universities and education services.</p>
-<a target="_blank" rel="noopener noreferrer"
-href="https://www.google.com/maps/search/?api=1&query=international+schools+Bangkok">Find Schools ↗</a>
+
+<a target="_blank"
+rel="noopener noreferrer"
+href="https://www.google.com/maps/search/?api=1&query=international+schools+Bangkok">
+Find Schools ↗
+</a>
 </div>
 
-<div class="dir searchable" data-keywords="translation interpreter thai english">
+<div class="dir searchable"
+data-keywords="translation interpreter thai english">
+
 <h3>🗣️ Translation Services</h3>
 <p>Find Thai-English translators and interpreters.</p>
-<a target="_blank" rel="noopener noreferrer"
-href="https://www.google.com/maps/search/?api=1&query=translation+services+Bangkok">Translators ↗</a>
+
+<a target="_blank"
+rel="noopener noreferrer"
+href="https://www.google.com/maps/search/?api=1&query=translation+services+Bangkok">
+Translators ↗
+</a>
 </div>
 
-<div class="dir searchable" data-keywords="business office accounting lawyer coworking">
+<div class="dir searchable"
+data-keywords="business office accounting lawyer coworking">
+
 <h3>💼 Business Services</h3>
 <p>Find offices, co-working, accounting and professional services.</p>
-<button class="link" id="businessDirectoryBtn">Search Businesses</button>
+
+<button class="link" type="button" id="businessDirectoryBtn">
+Search Businesses
+</button>
 </div>
 
-<div class="dir searchable" data-keywords="shopping retail mall market">
+<div class="dir searchable"
+data-keywords="shopping retail mall market">
+
 <h3>🛍️ Retail & Shopping</h3>
 <p>Find shopping centers, markets and local stores.</p>
-<a target="_blank" rel="noopener noreferrer"
-href="https://www.google.com/maps/search/?api=1&query=shopping+Bangkok">Shopping ↗</a>
+
+<a target="_blank"
+rel="noopener noreferrer"
+href="https://www.google.com/maps/search/?api=1&query=shopping+Bangkok">
+Shopping ↗
+</a>
 </div>
 
 </div>
 </div>
 </section>
+
+<!-- TRAVEL HELP -->
 
 <section id="travel">
 <div class="wrap">
@@ -1470,47 +1916,83 @@ href="https://www.google.com/maps/search/?api=1&query=shopping+Bangkok">Shopping
 <div class="eyebrow">Travel Smart</div>
 <h2>Visas, laws, embassies & emergencies</h2>
 </div>
-<p>Important information changes. Always verify visa, immigration, legal and government information with the responsible authority.</p>
+
+<p>
+Important information changes. Always verify visa, immigration,
+legal and government information with the responsible authority.
+</p>
 </div>
 
 <div class="directory">
 
-<div class="dir searchable" data-keywords="visa thai evisa immigration">
+<div class="dir searchable"
+data-keywords="visa thai evisa immigration">
+
 <h3>🛂 Thai e-Visa</h3>
 <p>Official Thailand electronic visa information.</p>
-<a target="_blank" rel="noopener noreferrer"
-href="https://www.thaievisa.go.th/">Thai e-Visa ↗</a>
+
+<a target="_blank"
+rel="noopener noreferrer"
+href="https://www.thaievisa.go.th/">
+Thai e-Visa ↗
+</a>
 </div>
 
-<div class="dir searchable" data-keywords="immigration visa extension stay">
+<div class="dir searchable"
+data-keywords="immigration visa extension stay">
+
 <h3>🧾 Thai Immigration</h3>
 <p>Immigration and stay information.</p>
-<a target="_blank" rel="noopener noreferrer"
-href="https://www.immigration.go.th/">Immigration ↗</a>
+
+<a target="_blank"
+rel="noopener noreferrer"
+href="https://www.immigration.go.th/">
+Immigration ↗
+</a>
 </div>
 
-<div class="dir searchable" data-keywords="thai law rules foreigners">
+<div class="dir searchable"
+data-keywords="thai law rules foreigners government">
+
 <h3>⚖️ Thai Laws & Rules</h3>
 <p>Government information about Thailand.</p>
-<a target="_blank" rel="noopener noreferrer"
-href="https://www.thailand.go.th/">Thailand.go.th ↗</a>
+
+<a target="_blank"
+rel="noopener noreferrer"
+href="https://www.thailand.go.th/">
+Thailand.go.th ↗
+</a>
 </div>
 
-<div class="dir searchable" data-keywords="american embassy united states usa">
+<div class="dir searchable"
+data-keywords="american embassy united states usa">
+
 <h3>🇺🇸 U.S. Embassy Bangkok</h3>
 <p>U.S. Embassy and American Citizen Services information.</p>
-<a target="_blank" rel="noopener noreferrer"
-href="https://th.usembassy.gov/">U.S. Embassy ↗</a>
+
+<a target="_blank"
+rel="noopener noreferrer"
+href="https://th.usembassy.gov/">
+U.S. Embassy ↗
+</a>
 </div>
 
-<div class="dir searchable" data-keywords="consulate embassy foreign embassy">
+<div class="dir searchable"
+data-keywords="consulate embassy foreign embassy">
+
 <h3>🌎 Embassies & Consulates</h3>
 <p>Find foreign embassies and consulates in Bangkok.</p>
-<a target="_blank" rel="noopener noreferrer"
-href="https://www.google.com/maps/search/?api=1&query=embassies+Bangkok">Embassy Map ↗</a>
+
+<a target="_blank"
+rel="noopener noreferrer"
+href="https://www.google.com/maps/search/?api=1&query=embassies+Bangkok">
+Embassy Map ↗
+</a>
 </div>
 
-<div class="dir searchable" data-keywords="emergency police ambulance fire tourist police">
+<div class="dir searchable"
+data-keywords="emergency police ambulance fire tourist police">
+
 <h3>🚨 Emergency Numbers</h3>
 <p>Police 191 · Medical 1669 · Fire 199 · Tourist Police 1155.</p>
 <a href="tel:1155">Call Tourist Police</a>
@@ -1532,7 +2014,7 @@ trademarks belong to their respective owners.
 </div>
 </section>
 
-<!-- DAILY HOROSCOPE -->
+<!-- HOROSCOPE -->
 
 <section id="horoscope" class="band">
 <div class="wrap">
@@ -1544,8 +2026,8 @@ trademarks belong to their respective owners.
 </div>
 
 <p>
-A little inspiration for your day. Choose your zodiac sign
-to see today's horoscope.
+Choose your zodiac sign for a daily lifestyle horoscope.
+The message changes automatically according to the calendar date in Bangkok.
 </p>
 </div>
 
@@ -1554,26 +2036,26 @@ data-keywords="horoscope astrology zodiac aries taurus gemini cancer leo virgo l
 
 <div class="zodiac-grid">
 
-<button class="link zodiacBtn" data-sign="Aries">♈ Aries</button>
-<button class="link zodiacBtn" data-sign="Taurus">♉ Taurus</button>
-<button class="link zodiacBtn" data-sign="Gemini">♊ Gemini</button>
-<button class="link zodiacBtn" data-sign="Cancer">♋ Cancer</button>
-<button class="link zodiacBtn" data-sign="Leo">♌ Leo</button>
-<button class="link zodiacBtn" data-sign="Virgo">♍ Virgo</button>
-<button class="link zodiacBtn" data-sign="Libra">♎ Libra</button>
-<button class="link zodiacBtn" data-sign="Scorpio">♏ Scorpio</button>
-<button class="link zodiacBtn" data-sign="Sagittarius">♐ Sagittarius</button>
-<button class="link zodiacBtn" data-sign="Capricorn">♑ Capricorn</button>
-<button class="link zodiacBtn" data-sign="Aquarius">♒ Aquarius</button>
-<button class="link zodiacBtn" data-sign="Pisces">♓ Pisces</button>
+<button class="link zodiacBtn" type="button" data-sign="Aries">♈ Aries</button>
+<button class="link zodiacBtn" type="button" data-sign="Taurus">♉ Taurus</button>
+<button class="link zodiacBtn" type="button" data-sign="Gemini">♊ Gemini</button>
+<button class="link zodiacBtn" type="button" data-sign="Cancer">♋ Cancer</button>
+<button class="link zodiacBtn" type="button" data-sign="Leo">♌ Leo</button>
+<button class="link zodiacBtn" type="button" data-sign="Virgo">♍ Virgo</button>
+<button class="link zodiacBtn" type="button" data-sign="Libra">♎ Libra</button>
+<button class="link zodiacBtn" type="button" data-sign="Scorpio">♏ Scorpio</button>
+<button class="link zodiacBtn" type="button" data-sign="Sagittarius">♐ Sagittarius</button>
+<button class="link zodiacBtn" type="button" data-sign="Capricorn">♑ Capricorn</button>
+<button class="link zodiacBtn" type="button" data-sign="Aquarius">♒ Aquarius</button>
+<button class="link zodiacBtn" type="button" data-sign="Pisces">♓ Pisces</button>
 
 </div>
 
-<div id="horoscopeResult" class="horoscope-result">
+<div id="horoscopeResult"
+class="horoscope-result"
+aria-live="polite">
 
-<div class="eyebrow">
-Today's Horoscope
-</div>
+<div class="eyebrow">Today's Horoscope</div>
 
 <h3 id="horoscopeSign"></h3>
 
@@ -1584,10 +2066,11 @@ Horoscopes are provided for entertainment purposes only.
 </div>
 
 </div>
-
 </div>
 </div>
 </section>
+
+<!-- EXPLORE LIVE -->
 
 <section id="explore" class="dark">
 <div class="wrap">
@@ -1597,7 +2080,11 @@ Horoscopes are provided for entertainment purposes only.
 <div class="eyebrow">Explore Bangkok Live</div>
 <h2>Useful Bangkok information on demand</h2>
 </div>
-<p>Public/open services help make BangkokWeekly.com useful without building a proprietary database first.</p>
+
+<p>
+Public and open services help make BangkokWeekly.com useful
+without requiring visitors to create an account.
+</p>
 </div>
 
 <div class="grid">
@@ -1606,8 +2093,16 @@ Horoscopes are provided for entertainment purposes only.
 <div class="card-body">
 <span class="tag">OPEN DATA</span>
 <h3>🍽️ Restaurant Finder</h3>
-<p>Find Bangkok restaurants, cafés, fast food and food courts represented in OpenStreetMap.</p>
-<button class="link" id="restaurantSearchBtn">Find Restaurants</button>
+
+<p>
+Find Bangkok restaurants, cafés, fast food and food courts
+represented in OpenStreetMap.
+</p>
+
+<button class="link" type="button" id="restaurantSearchBtn">
+Find Restaurants
+</button>
+
 </div>
 </article>
 
@@ -1615,8 +2110,16 @@ Horoscopes are provided for entertainment purposes only.
 <div class="card-body">
 <span class="tag">CURRENT NEWS</span>
 <h3>📰 Bangkok News</h3>
-<p>Search current Bangkok coverage through GDELT and open the original publisher.</p>
-<button class="link" id="newsBtn">Latest Bangkok News</button>
+
+<p>
+Search current Bangkok coverage through GDELT and open
+the original publisher.
+</p>
+
+<button class="link" type="button" id="newsBtn">
+Latest Bangkok News
+</button>
+
 </div>
 </article>
 
@@ -1624,8 +2127,16 @@ Horoscopes are provided for entertainment purposes only.
 <div class="card-body">
 <span class="tag">OPEN DATA</span>
 <h3>🥊 Muay Thai & Sports</h3>
-<p>Find Muay Thai, boxing, martial arts and sports venues represented in OpenStreetMap.</p>
-<button class="link" id="sportsBtn">Find Muay Thai & Sports</button>
+
+<p>
+Find Muay Thai, boxing, martial arts and sports venues
+represented in OpenStreetMap.
+</p>
+
+<button class="link" type="button" id="sportsBtn">
+Find Muay Thai & Sports
+</button>
+
 </div>
 </article>
 
@@ -1633,8 +2144,16 @@ Horoscopes are provided for entertainment purposes only.
 <div class="card-body">
 <span class="tag">OPEN DIRECTORY</span>
 <h3>📍 Local Business Directory</h3>
-<p>Discover Bangkok shops, offices and local businesses with available map and contact information.</p>
-<button class="link" id="businessBtn">Local Businesses</button>
+
+<p>
+Discover Bangkok shops, offices and local businesses
+with available map and contact information.
+</p>
+
+<button class="link" type="button" id="businessBtn">
+Local Businesses
+</button>
+
 </div>
 </article>
 
@@ -1653,11 +2172,14 @@ to original publishers.
 
 </main>
 
+<!-- FOOTER -->
+
 <footer>
 
 <div class="footer-grid">
 
 <div>
+
 <div class="brand">
 <span class="logo">BW</span>
 <span>
@@ -1666,7 +2188,9 @@ to original publishers.
 </span>
 </div>
 
-<p>Everything Bangkok in one easy place.</p>
+<p>
+Everything Bangkok in one easy place.
+</p>
 
 <p style="font-size:11px;color:#708591;margin-top:15px;">
 As an Amazon Associate I earn from qualifying purchases.
@@ -1687,16 +2211,37 @@ As an Amazon Associate I earn from qualifying purchases.
 
 <div>
 <h3>Official Resources</h3>
-<a target="_blank" rel="noopener noreferrer"
-href="https://www.glo.or.th/">Government Lottery Office ↗</a>
-<a target="_blank" rel="noopener noreferrer"
-href="https://www.tourismthailand.org/">Thailand Tourism ↗</a>
-<a target="_blank" rel="noopener noreferrer"
-href="https://www.thailand.go.th/">Thailand.go.th ↗</a>
-<a target="_blank" rel="noopener noreferrer"
-href="https://th.usembassy.gov/">U.S. Embassy ↗</a>
-<a target="_blank" rel="noopener noreferrer"
-href="https://www.bts.co.th/eng/">BTS Skytrain ↗</a>
+
+<a target="_blank"
+rel="noopener noreferrer"
+href="https://www.glo.or.th/">
+Government Lottery Office ↗
+</a>
+
+<a target="_blank"
+rel="noopener noreferrer"
+href="https://www.tourismthailand.org/">
+Thailand Tourism ↗
+</a>
+
+<a target="_blank"
+rel="noopener noreferrer"
+href="https://www.thailand.go.th/">
+Thailand.go.th ↗
+</a>
+
+<a target="_blank"
+rel="noopener noreferrer"
+href="https://th.usembassy.gov/">
+U.S. Embassy ↗
+</a>
+
+<a target="_blank"
+rel="noopener noreferrer"
+href="https://www.bts.co.th/eng/">
+BTS Skytrain ↗
+</a>
+
 </div>
 
 <div>
@@ -1719,30 +2264,52 @@ Independent website.
 
 <span>
 Third-party trademarks belong to their respective owners.
-·
-<a target="_blank" rel="noopener noreferrer"
-href="https://www.openstreetmap.org/copyright">
-© OpenStreetMap contributors / ODbL
-</a>
 </span>
 
 </div>
 
 </footer>
 
-<div class="modal" id="modal" aria-hidden="true">
+<!-- MODAL -->
+
+<div class="modal"
+id="modal"
+aria-hidden="true"
+role="dialog"
+aria-modal="true">
+
 <div class="dialog">
-<button class="close" id="closeModal">×</button>
+
+<button class="close"
+type="button"
+id="closeModal"
+aria-label="Close">
+×
+</button>
+
 <div id="modalContent"></div>
+
 </div>
 </div>
 
-<div class="toast" id="toast"></div>
+<div class="toast"
+id="toast"
+role="status"
+aria-live="polite">
+</div>
 
 <script>
 
+/* =========================================================
+   HELPERS
+   ========================================================= */
+
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
+
+/* =========================================================
+   ENGLISH / THAI
+   ========================================================= */
 
 const translations = {
 
@@ -1798,7 +2365,10 @@ updateBangkokTime();
 
 applyLanguage();
 
-/* CLOCK */
+/* =========================================================
+   BANGKOK CLOCK
+   Updates every second
+   ========================================================= */
 
 function updateBangkokTime(){
 
@@ -1830,7 +2400,11 @@ day:"numeric"
 updateBangkokTime();
 setInterval(updateBangkokTime,1000);
 
-/* WEATHER */
+/* =========================================================
+   WEATHER
+   Loads immediately and automatically checks again
+   every 30 minutes while the page is open.
+   ========================================================= */
 
 const weatherCodes = {
 0:"Clear sky",
@@ -1845,6 +2419,9 @@ const weatherCodes = {
 61:"Light rain",
 63:"Rain",
 65:"Heavy rain",
+71:"Light snow",
+73:"Snow",
+75:"Heavy snow",
 80:"Rain showers",
 81:"Rain showers",
 82:"Heavy rain showers",
@@ -1857,6 +2434,9 @@ async function loadWeather(){
 
 try{
 
+$("#weatherUpdated").textContent =
+"Checking current Bangkok weather...";
+
 const url =
 "https://api.open-meteo.com/v1/forecast" +
 "?latitude=13.7563" +
@@ -1864,7 +2444,10 @@ const url =
 "&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m" +
 "&timezone=Asia%2FBangkok";
 
-const response = await fetch(url,{cache:"no-store"});
+const response =
+await fetch(url,{
+cache:"no-store"
+});
 
 if(!response.ok){
 throw new Error("Weather unavailable");
@@ -1877,7 +2460,8 @@ $("#temp").textContent =
 Math.round(weather.temperature_2m) + "°C";
 
 $("#weatherText").textContent =
-weatherCodes[weather.weather_code] || "Current conditions";
+weatherCodes[weather.weather_code] ||
+"Current conditions";
 
 $("#weatherMeta").textContent =
 "Feels like " +
@@ -1888,9 +2472,17 @@ weather.relative_humidity_2m +
 Math.round(weather.wind_speed_10m) +
 " km/h";
 
+const bangkokUpdateTime =
+new Intl.DateTimeFormat("en-US",{
+timeZone:"Asia/Bangkok",
+hour:"numeric",
+minute:"2-digit"
+}).format(new Date());
+
 $("#weatherUpdated").textContent =
-"Weather updated " +
-new Date().toLocaleTimeString();
+"Last checked " +
+bangkokUpdateTime +
+" Bangkok time · Automatically checks every 30 minutes";
 
 }catch(error){
 
@@ -1900,13 +2492,31 @@ $("#weatherText").textContent =
 $("#weatherMeta").textContent =
 "Please try again later.";
 
+$("#weatherUpdated").textContent =
+"Automatic weather service will try again.";
+
 }
 
 }
 
 loadWeather();
 
-/* TOAST */
+/* 30 MINUTES */
+setInterval(loadWeather,30 * 60 * 1000);
+
+/* Refresh weather when someone returns to an old open tab */
+
+document.addEventListener("visibilitychange",()=>{
+
+if(!document.hidden){
+loadWeather();
+}
+
+});
+
+/* =========================================================
+   TOAST
+   ========================================================= */
 
 function toast(message){
 
@@ -1924,7 +2534,9 @@ element.classList.remove("show");
 
 }
 
-/* SEARCH */
+/* =========================================================
+   SITE SEARCH
+   ========================================================= */
 
 $("#searchForm").addEventListener("submit",event=>{
 
@@ -1943,12 +2555,15 @@ query.includes("lottery") ||
 query.includes("lotto") ||
 query.includes("สลาก")
 ){
+
 document.querySelector("#lottery").scrollIntoView({
 behavior:"smooth",
 block:"center"
 });
+
 toast("Thai Lottery information found.");
 return;
+
 }
 
 if(
@@ -1956,12 +2571,15 @@ query.includes("horoscope") ||
 query.includes("zodiac") ||
 query.includes("astrology")
 ){
+
 document.querySelector("#horoscope").scrollIntoView({
 behavior:"smooth",
 block:"center"
 });
+
 toast("Daily Horoscope found.");
 return;
+
 }
 
 let results = 0;
@@ -1979,7 +2597,9 @@ const match = text.includes(query);
 
 item.classList.toggle("hidden",!match);
 
-if(match){results++;}
+if(match){
+results++;
+}
 
 });
 
@@ -1996,10 +2616,12 @@ const first =
 document.querySelector(".searchable:not(.hidden)");
 
 if(first){
+
 first.scrollIntoView({
 behavior:"smooth",
 block:"center"
 });
+
 }
 
 }else{
@@ -2022,7 +2644,9 @@ item.classList.remove("hidden");
 
 });
 
-/* MODAL */
+/* =========================================================
+   MODAL
+   ========================================================= */
 
 const modal = $("#modal");
 const modalContent = $("#modalContent");
@@ -2030,6 +2654,7 @@ const modalContent = $("#modalContent");
 function openModal(content){
 
 modalContent.innerHTML = content;
+
 modal.classList.add("show");
 modal.setAttribute("aria-hidden","false");
 
@@ -2045,18 +2670,24 @@ modal.setAttribute("aria-hidden","true");
 $("#closeModal").addEventListener("click",closeModal);
 
 modal.addEventListener("click",event=>{
+
 if(event.target === modal){
 closeModal();
 }
+
 });
 
 document.addEventListener("keydown",event=>{
+
 if(event.key === "Escape"){
 closeModal();
 }
+
 });
 
-/* SAFE HTML */
+/* =========================================================
+   SAFE HTML
+   ========================================================= */
 
 function escapeHTML(value){
 
@@ -2073,16 +2704,22 @@ character=>({
 
 }
 
-/* RATINGS */
+/* =========================================================
+   LOCAL RATINGS
+   ========================================================= */
 
 function getRatings(){
 
 try{
+
 return JSON.parse(
 localStorage.getItem("bangkokweekly_ratings") || "{}"
 );
+
 }catch(error){
+
 return {};
+
 }
 
 }
@@ -2090,6 +2727,7 @@ return {};
 function saveRating(name,value){
 
 const ratings = getRatings();
+
 ratings[name] = value;
 
 localStorage.setItem(
@@ -2101,9 +2739,12 @@ JSON.stringify(ratings)
 
 document.addEventListener("click",event=>{
 
-const button = event.target.closest(".rateBtn");
+const button =
+event.target.closest(".rateBtn");
 
-if(!button){return;}
+if(!button){
+return;
+}
 
 const name = button.dataset.name;
 const current = getRatings()[name] || 0;
@@ -2112,15 +2753,21 @@ openModal(`
 
 <h2>Rate ${escapeHTML(name)}</h2>
 
-<p>This rating is stored only on your device.</p>
+<p>
+This personal rating is stored only on this device.
+It is not presented as a public BangkokWeekly.com rating.
+</p>
 
-<div id="ratingStars" style="font-size:28px;margin:20px 0">
+<div id="ratingStars"
+style="font-size:28px;margin:20px 0">
 
 ${[1,2,3,4,5].map(number=>
 
 `<button
 class="ratingStar"
+type="button"
 data-rating="${number}"
+aria-label="${number} star rating"
 style="
 border:0;
 background:none;
@@ -2135,7 +2782,9 @@ color:${number <= current ? "#d99f28" : "#c7d0d6"};
 
 </div>
 
-<button class="gold-btn" id="saveRatingBtn">
+<button class="gold-btn"
+type="button"
+id="saveRatingBtn">
 Save Rating
 </button>
 
@@ -2147,7 +2796,8 @@ $$(".ratingStar").forEach(star=>{
 
 star.addEventListener("click",()=>{
 
-selected = Number(star.dataset.rating);
+selected =
+Number(star.dataset.rating);
 
 $$(".ratingStar").forEach(item=>{
 
@@ -2164,15 +2814,26 @@ Number(item.dataset.rating) <= selected
 
 $("#saveRatingBtn").addEventListener("click",()=>{
 
+if(!selected){
+
+toast("Select a rating first.");
+return;
+
+}
+
 saveRating(name,selected);
+
 closeModal();
+
 toast("Rating saved on this device.");
 
 });
 
 });
 
-/* OPENSTREETMAP */
+/* =========================================================
+   OPENSTREETMAP / OVERPASS
+   ========================================================= */
 
 const OVERPASS_ENDPOINT =
 "https://overpass-api.de/api/interpreter";
@@ -2180,7 +2841,11 @@ const OVERPASS_ENDPOINT =
 const BANGKOK_BBOX =
 "13.55,100.30,13.95,100.80";
 
-function showOpenDataResults(title,description,results){
+function showOpenDataResults(
+title,
+description,
+results
+){
 
 openModal(`
 
@@ -2189,6 +2854,7 @@ openModal(`
 <p>${escapeHTML(description)}</p>
 
 <div>
+
 ${
 results.length
 ? results.join("")
@@ -2196,9 +2862,14 @@ results.length
 No results were returned. Please try again shortly.
 </div>`
 }
+
 </div>
 
-<p style="font-size:11px;color:#738692;margin-top:18px">
+<p style="
+font-size:11px;
+color:#738692;
+margin-top:18px
+">
 © OpenStreetMap contributors · ODbL.
 Community-maintained information may be incomplete or outdated.
 </p>
@@ -2234,12 +2905,21 @@ tags["contact:website"] ||
 tags.website ||
 "";
 
-if(website && !/^https?:\/\//i.test(website)){
-website = "https://" + website;
+if(
+website &&
+!/^https?:\/\//i.test(website)
+){
+website =
+"https://" + website;
 }
 
-const lat = item.lat ?? item.center?.lat;
-const lon = item.lon ?? item.center?.lon;
+const lat =
+item.lat ??
+item.center?.lat;
+
+const lon =
+item.lon ??
+item.center?.lon;
 
 const mapURL =
 lat && lon
@@ -2252,7 +2932,9 @@ return `
 
 <div class="result">
 
-<strong>${escapeHTML(name)}</strong>
+<strong>
+${escapeHTML(name)}
+</strong>
 
 ${address
 ? `<div class="result-meta">${escapeHTML(address)}</div>`
@@ -2294,11 +2976,20 @@ Call
 
 }
 
-async function runOverpass(query,title,description){
+async function runOverpass(
+query,
+title,
+description
+){
 
 openModal(`
+
 <h2>${escapeHTML(title)}</h2>
-<p>Searching Bangkok open data...</p>
+
+<p>
+Searching Bangkok open data...
+</p>
+
 `);
 
 try{
@@ -2319,7 +3010,8 @@ if(!response.ok){
 throw new Error("Open-data service unavailable");
 }
 
-const data = await response.json();
+const data =
+await response.json();
 
 const cards =
 (data.elements || [])
@@ -2358,7 +3050,9 @@ Open OpenStreetMap ↗
 
 }
 
-/* RESTAURANTS */
+/* =========================================================
+   RESTAURANTS
+   ========================================================= */
 
 function findRestaurants(){
 
@@ -2381,10 +3075,21 @@ out center tags;`,
 
 }
 
-$("#restaurantSearchBtn").addEventListener("click",findRestaurants);
-$("#restaurantTopBtn").addEventListener("click",findRestaurants);
+$("#restaurantSearchBtn")
+.addEventListener(
+"click",
+findRestaurants
+);
 
-/* SPORTS */
+$("#restaurantTopBtn")
+.addEventListener(
+"click",
+findRestaurants
+);
+
+/* =========================================================
+   SPORTS / MUAY THAI
+   ========================================================= */
 
 $("#sportsBtn").addEventListener("click",()=>{
 
@@ -2408,7 +3113,9 @@ out center tags;`,
 
 });
 
-/* BUSINESS */
+/* =========================================================
+   BUSINESS DIRECTORY
+   ========================================================= */
 
 function findBusinesses(){
 
@@ -2430,16 +3137,33 @@ out center tags;`,
 
 }
 
-$("#businessBtn").addEventListener("click",findBusinesses);
-$("#businessDirectoryBtn").addEventListener("click",findBusinesses);
+$("#businessBtn")
+.addEventListener(
+"click",
+findBusinesses
+);
 
-/* NEWS */
+$("#businessDirectoryBtn")
+.addEventListener(
+"click",
+findBusinesses
+);
+
+/* =========================================================
+   CURRENT NEWS
+   Fetches new results whenever clicked.
+   ========================================================= */
 
 $("#newsBtn").addEventListener("click",async()=>{
 
 openModal(`
+
 <h2>Latest Bangkok News</h2>
-<p>Loading current Bangkok coverage...</p>
+
+<p>
+Loading current Bangkok coverage...
+</p>
+
 `);
 
 try{
@@ -2453,16 +3177,23 @@ const endpoint =
 "&sort=datedesc";
 
 const response =
-await fetch(endpoint,{cache:"no-store"});
+await fetch(
+endpoint,
+{
+cache:"no-store"
+}
+);
 
 if(!response.ok){
 throw new Error("News service unavailable");
 }
 
-const data = await response.json();
+const data =
+await response.json();
 
 const articles =
-(data.articles || []).slice(0,25);
+(data.articles || [])
+.slice(0,25);
 
 const articleHTML =
 articles.map(article=>{
@@ -2472,12 +3203,24 @@ return `
 <div class="result">
 
 <strong>
-${escapeHTML(article.title || "Untitled story")}
+${escapeHTML(
+article.title ||
+"Untitled story"
+)}
 </strong>
 
 <div class="result-meta">
-${escapeHTML(article.domain || "Publisher")}
-${article.seendate ? " · " + escapeHTML(article.seendate) : ""}
+
+${escapeHTML(
+article.domain ||
+"Publisher"
+)}
+
+${article.seendate
+? " · " +
+escapeHTML(article.seendate)
+: ""}
+
 </div>
 
 <a class="link"
@@ -2507,7 +3250,11 @@ ${articleHTML ||
 No current stories were returned.
 </div>`}
 
-<p style="font-size:11px;color:#738692;margin-top:18px">
+<p style="
+font-size:11px;
+color:#738692;
+margin-top:18px
+">
 News discovery powered by GDELT.
 Article content belongs to the original publishers.
 </p>
@@ -2540,102 +3287,192 @@ Open GDELT ↗
 
 });
 
-/* DAILY HOROSCOPE */
+/* =========================================================
+   DAILY HOROSCOPE
+   Uses Bangkok's calendar date.
+   Automatically changes when Bangkok enters a new day.
+   ========================================================= */
 
 const horoscopeMessages = {
 
 Aries:[
 "Put your energy toward one clear priority today. A simple decision may create useful momentum.",
 "An unexpected conversation could give you a fresh perspective. Stay open to changing your approach.",
-"Today favors action, but patience will help you choose the right direction."
+"Today favors action, but patience will help you choose the right direction.",
+"A fresh start may be closer than it appears. Focus your energy on what you can influence today.",
+"Your initiative can move something forward. Give yourself a clear target before taking action."
 ],
 
 Taurus:[
 "Comfort and stability matter today. Give attention to something that makes your daily routine easier.",
 "A practical opportunity may deserve a second look. Small improvements can have lasting value.",
-"Take your time with an important decision today. There is no need to rush what matters."
+"Take your time with an important decision today. There is no need to rush what matters.",
+"A steady approach may bring better results than trying to force quick progress.",
+"Something familiar could become more valuable when you look at it from a new perspective."
 ],
 
 Gemini:[
 "Conversation is highlighted today. A message, introduction or new idea may lead somewhere interesting.",
 "Curiosity could take you in an unexpected direction. Follow the subject that captures your attention.",
-"Your ability to communicate clearly can make a difference today."
+"Your ability to communicate clearly can make a difference today.",
+"A useful connection may begin with a simple conversation. Stay curious.",
+"Several ideas may compete for your attention. Choose the one that feels most useful."
 ],
 
 Cancer:[
 "Pay attention to home, family and the people who make you feel grounded today.",
 "A quiet moment could help you see a situation more clearly.",
-"Trust your instincts, while giving yourself enough time to consider the facts."
+"Trust your instincts, while giving yourself enough time to consider the facts.",
+"Make room for something that restores your energy today.",
+"A thoughtful conversation may help strengthen an important connection."
 ],
 
 Leo:[
 "Confidence is strong today. Use it to move forward on something you've been postponing.",
 "Your enthusiasm may be contagious. Share an idea with someone who can help it grow.",
-"Today is a good day to be visible, creative and generous with your energy."
+"Today is a good day to be visible, creative and generous with your energy.",
+"Your natural confidence can help open a door today. Keep your approach warm and practical.",
+"Something creative deserves more of your attention. Give yourself permission to enjoy it."
 ],
 
 Virgo:[
 "A little organization could make the rest of your day much easier.",
 "Focus on what you can improve rather than trying to make everything perfect.",
-"A practical solution may be simpler than you initially thought."
+"A practical solution may be simpler than you initially thought.",
+"Small details matter today, but don't let them distract you from the larger goal.",
+"Clearing one unfinished task may create more mental space than you expect."
 ],
 
 Libra:[
 "Balance is important today. Make room for both responsibilities and something you genuinely enjoy.",
 "A conversation may benefit from listening before deciding.",
-"Beauty, creativity and good company could bring welcome energy into your day."
+"Beauty, creativity and good company could bring welcome energy into your day.",
+"A balanced choice may be more valuable than a dramatic one today.",
+"Give an important relationship some attention while still protecting time for yourself."
 ],
 
 Scorpio:[
 "Your focus is powerful today. Direct it toward something meaningful rather than something distracting.",
 "An unanswered question may become clearer if you look beneath the surface.",
-"Choose carefully where you invest your time and attention today."
+"Choose carefully where you invest your time and attention today.",
+"A little patience could reveal information that was not obvious at first.",
+"Concentrate on what matters most and avoid giving unnecessary distractions your energy."
 ],
 
 Sagittarius:[
 "Something new may be calling your attention. Explore it without feeling that you must immediately commit.",
 "A change of scenery or new idea could refresh your outlook.",
-"Optimism can open doors today, especially when paired with practical action."
+"Optimism can open doors today, especially when paired with practical action.",
+"Learning something new could lead to an unexpected opportunity or interesting conversation.",
+"Keep your plans flexible. An unexpected possibility may be worth exploring."
 ],
 
 Capricorn:[
 "Steady progress matters more than speed today. Finish one important thing before starting another.",
 "A long-term goal deserves some attention. One small step can put you closer to it.",
-"Your practical instincts are useful today, particularly with money, work or planning."
+"Your practical instincts are useful today, particularly with money, work or planning.",
+"Consistency may accomplish more today than trying to do everything at once.",
+"Give some attention to a goal that will still matter to you several months from now."
 ],
 
 Aquarius:[
 "An unconventional idea may be worth exploring today.",
 "Connecting with someone outside your usual circle could lead to an interesting perspective.",
-"Give yourself room to think differently. The obvious answer may not be the only answer."
+"Give yourself room to think differently. The obvious answer may not be the only answer.",
+"A fresh approach may solve something that has felt unnecessarily complicated.",
+"Follow your curiosity today, especially when it introduces you to a different point of view."
 ],
 
 Pisces:[
 "Creativity and intuition are highlighted today. Give yourself some quiet space to think.",
 "A kind gesture may have more impact than you realize.",
-"Listen to your instincts, but balance inspiration with practical details."
+"Listen to your instincts, but balance inspiration with practical details.",
+"A creative idea may deserve more attention than you initially give it.",
+"Slow down enough to notice what your instincts are telling you, then consider the practical details."
 ]
 
 };
 
+function getBangkokDateKey(){
+
+const parts =
+new Intl.DateTimeFormat(
+"en-US",
+{
+timeZone:"Asia/Bangkok",
+year:"numeric",
+month:"2-digit",
+day:"2-digit"
+}
+).formatToParts(new Date());
+
+const year =
+parts.find(part=>part.type==="year").value;
+
+const month =
+parts.find(part=>part.type==="month").value;
+
+const day =
+parts.find(part=>part.type==="day").value;
+
+return `${year}-${month}-${day}`;
+
+}
+
 function dailyHoroscope(sign){
 
 const today =
-new Intl.DateTimeFormat("en-CA",{
-timeZone:"Asia/Bangkok"
-}).format(new Date());
+getBangkokDateKey();
 
 let seed = 0;
 
-const seedText = sign + today;
+const seedText =
+sign + today;
 
-for(let i = 0; i < seedText.length; i++){
-seed += seedText.charCodeAt(i) * (i + 1);
+for(
+let i = 0;
+i < seedText.length;
+i++
+){
+
+seed +=
+seedText.charCodeAt(i) *
+(i + 1);
+
 }
 
-const messages = horoscopeMessages[sign];
+const messages =
+horoscopeMessages[sign];
 
-return messages[seed % messages.length];
+return messages[
+seed % messages.length
+];
+
+}
+
+function showHoroscope(sign){
+
+$("#horoscopeSign").textContent =
+sign +
+" · " +
+new Intl.DateTimeFormat(
+"en-US",
+{
+timeZone:"Asia/Bangkok",
+month:"long",
+day:"numeric",
+year:"numeric"
+}
+).format(new Date());
+
+$("#horoscopeMessage").textContent =
+dailyHoroscope(sign);
+
+$("#horoscopeResult").style.display =
+"block";
+
+$("#horoscopeResult").dataset.sign =
+sign;
 
 }
 
@@ -2643,23 +3480,13 @@ $$(".zodiacBtn").forEach(button=>{
 
 button.addEventListener("click",()=>{
 
-const sign = button.dataset.sign;
+const sign =
+button.dataset.sign;
 
-$("#horoscopeSign").textContent =
-sign + " · " +
-new Intl.DateTimeFormat("en-US",{
-timeZone:"Asia/Bangkok",
-month:"long",
-day:"numeric",
-year:"numeric"
-}).format(new Date());
+showHoroscope(sign);
 
-$("#horoscopeMessage").textContent =
-dailyHoroscope(sign);
-
-$("#horoscopeResult").style.display = "block";
-
-$("#horoscopeResult").scrollIntoView({
+$("#horoscopeResult")
+.scrollIntoView({
 behavior:"smooth",
 block:"center"
 });
@@ -2668,7 +3495,39 @@ block:"center"
 
 });
 
-/* PRIVACY */
+/* Check Bangkok date periodically so an open page
+   changes horoscope after midnight Bangkok time. */
+
+let lastBangkokDate =
+getBangkokDateKey();
+
+setInterval(()=>{
+
+const currentBangkokDate =
+getBangkokDateKey();
+
+if(
+currentBangkokDate !==
+lastBangkokDate
+){
+
+lastBangkokDate =
+currentBangkokDate;
+
+const selectedSign =
+$("#horoscopeResult").dataset.sign;
+
+if(selectedSign){
+showHoroscope(selectedSign);
+}
+
+}
+
+},60 * 1000);
+
+/* =========================================================
+   PRIVACY
+   ========================================================= */
 
 $("#privacyBtn").addEventListener("click",event=>{
 
@@ -2684,12 +3543,12 @@ in this version of the website.
 </p>
 
 <p>
-Language preferences and optional local ratings may be stored in
-the visitor's own browser using localStorage.
+Language preferences and optional personal ratings may be stored
+in the visitor's own browser using localStorage.
 </p>
 
 <p>
-Live weather requests may be sent to the weather service used by
+Live weather requests are sent to the weather service used by
 the website. Open-data searches may be sent to public data services
 such as OpenStreetMap/Overpass and GDELT.
 </p>
@@ -2707,15 +3566,17 @@ privacy policies and terms.
 
 <p>
 If BangkokWeekly.com later adds advertising, accounts, analytics,
-public reviews, forms or business submissions, its privacy policy
-should be updated accordingly.
+public reviews, forms, business submissions or other data collection,
+its privacy notice should be updated to describe those services.
 </p>
 
 `);
 
 });
 
-/* TERMS */
+/* =========================================================
+   TERMS
+   ========================================================= */
 
 $("#termsBtn").addEventListener("click",event=>{
 
@@ -2779,7 +3640,9 @@ property of their respective owners.
 
 });
 
-/* LOCAL DATA */
+/* =========================================================
+   LOCAL DATA
+   ========================================================= */
 
 $("#dataBtn").addEventListener("click",event=>{
 
@@ -2790,8 +3653,8 @@ openModal(`
 <h2>My Local Data</h2>
 
 <p>
-BangkokWeekly.com currently stores only your language preference
-and optional ratings on this device.
+BangkokWeekly.com currently stores your language preference
+and optional personal ratings on this device.
 </p>
 
 <pre style="
@@ -2803,33 +3666,55 @@ overflow:auto;
 JSON.stringify(
 {
 language:
-localStorage.getItem("bangkokweekly_language"),
-ratings:getRatings()
+localStorage.getItem(
+"bangkokweekly_language"
+),
+ratings:
+getRatings()
 },
 null,
 2
 )
 )}</pre>
 
-<button class="gold-btn" id="clearLocalData">
+<button class="gold-btn"
+type="button"
+id="clearLocalData">
 Clear My Local Data
 </button>
 
 `);
 
-$("#clearLocalData").addEventListener("click",()=>{
+$("#clearLocalData")
+.addEventListener("click",()=>{
 
-localStorage.removeItem("bangkokweekly_language");
-localStorage.removeItem("bangkokweekly_ratings");
+localStorage.removeItem(
+"bangkokweekly_language"
+);
+
+localStorage.removeItem(
+"bangkokweekly_ratings"
+);
+
+currentLanguage = "en";
+applyLanguage();
 
 closeModal();
-toast("BangkokWeekly local data cleared.");
+
+toast(
+"Bangkok Weekly local data cleared."
+);
 
 });
 
 });
 
-/* PRIVATE ADMIN */
+/* =========================================================
+   PRIVATE ADMIN
+   IMPORTANT:
+   A secure visitor counter cannot safely be built with only
+   public GitHub Pages HTML/JavaScript.
+   ========================================================= */
 
 $("#adminFooter").addEventListener("click",event=>{
 
@@ -2847,14 +3732,14 @@ Secure analytics backend required.
 
 <br><br>
 
-The public website is ready for a private analytics system,
-but a real administrator password should never be stored
-inside a public GitHub HTML file.
+A real administrator password must not be stored inside this public
+GitHub HTML file because anyone could inspect the source code and
+discover it.
 
 </div>
 
 <p>
-A secure future administrator dashboard can include:
+A future secure administrator dashboard could include:
 </p>
 
 <ul>
@@ -2862,7 +3747,7 @@ A secure future administrator dashboard can include:
 <li>Visitors by day</li>
 <li>Date and time</li>
 <li>Country</li>
-<li>Region / state</li>
+<li>Region or state</li>
 <li>City</li>
 <li>Page visited</li>
 <li>Traffic source</li>
@@ -2870,13 +3755,18 @@ A secure future administrator dashboard can include:
 </ul>
 
 <p>
-Authentication and visitor records should be stored securely
-on a server rather than inside this public page.
+Visitor information and administrator authentication should be
+handled by a secure server-side analytics system rather than this
+public HTML file.
 </p>
 
 `);
 
 });
+
+/* =========================================================
+   COPYRIGHT YEAR
+   ========================================================= */
 
 $("#year").textContent =
 new Date().getFullYear();
